@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/my_reservation_item_size"
+    android:orientation="vertical" >
+
+    <TextView
+        android:paddingBottom="@dimen/padding_8"
+        android:paddingTop="@dimen/padding_8"
+        android:id="@+id/text"
+        android:ems="7"
+        android:minLines="3"
+        android:maxLines="3"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+
+        android:gravity="center"
+
+        android:text="hello" />
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:id="@+id/cross"
+        android:layout_width="@dimen/resrevation_cancel_image"
+        android:layout_height="@dimen/resrevation_cancel_image"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/cancel_icon_white" />
+
+</RelativeLayout>

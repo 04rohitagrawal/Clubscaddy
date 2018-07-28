@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_5"
+
+    android:background="@android:color/transparent"
+
+     >
+
+
+
+
+
+
+
+        <LinearLayout
+            android:background="@color/white_color"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/classified_modify_top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <LinearLayout
+                android:visibility="invisible"
+                android:id="@+id/classified_modify_linear_layout"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/edit_news_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:background="@drawable/black_edit_pencil" />
+
+                <ImageButton
+                    android:id="@+id/delete_news_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:background="@drawable/delete_btn" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_toLeftOf="@id/classified_modify_linear_layout"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/profile_linear_layout"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/image_view_layout"
+                    android:layout_margin="10dp"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/classified_user_profile"
+                        android:layout_width="@dimen/member_profile_size"
+                        android:layout_height="@dimen/member_profile_size"
+
+                        android:src="@drawable/default_img_profile"
+                        android:visibility="visible" />
+
+
+
+                    <ProgressBar
+                           android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/image_loader_progressbar"
+                        android:visibility="gone"
+                        android:layout_width="@dimen/cross_image_sze"
+                        android:layout_height="@dimen/cross_image_sze"
+                        android:layout_gravity="center" />
+
+                </RelativeLayout>
+
+
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/classified_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="iou iouwegdsfsdhfdshfsdhfsdafgsdafsjhj"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/text_size16"
+                    />
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <TextView
+               android:id="@+id/producr_price_tv"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentRight="true"
+               android:text="$10"
+               android:textColor="@color/blue_header"
+               android:textSize="@dimen/text_size18"
+               android:textStyle="bold" />
+
+
+           <LinearLayout
+               android:layout_toLeftOf="@id/producr_price_tv"
+               android:id="@+id/profile_layout"
+               android:orientation="vertical"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+
+               <TextView
+
+                   android:id="@+id/classified_title_tv"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textColor="@color/black_color"
+                   android:textSize="@dimen/text_size14"
+                   android:textStyle="bold" />
+
+               <TextView
+                   android:id="@+id/classified_discription_tv"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="dfs fsdnfsdn fdshfds fsd fds fdsjfdsf ds fdsfdjsf f sdfdsfjds fdsfsd nfds fds fsdjfsd fds fsdjfsdf sdfjsdjfsd f dsfjsdkfnsd fds fsdjfnsdf sd fsdjfsdkfnsdf"
+                   android:textColor="@color/black_color"
+                   android:textSize="@dimen/text_size12" />
+
+           </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+       </RelativeLayout>
+
+
+
+
+
+
+             <LinearLayout
+                 android:visibility="gone"
+                 android:id="@+id/email_layout"
+                 android:layout_marginLeft="@dimen/margin_10"
+                 android:layout_marginRight="@dimen/margin_10"
+                 android:layout_marginTop="@dimen/margin_5"
+                 android:orientation="horizontal"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+
+                 <TextView
+                     android:textColor="@color/black_color"
+                     android:text="Email - "
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content" />
+
+
+                 <TextView
+                     android:id="@+id/email_address_tv"
+                     android:singleLine="true"
+                     android:textColor="@color/blue_header"
+                     android:text="15rohitagrawal:"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content" />
+
+             </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/mobile_layout"
+            android:layout_below="@id/email_layout"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/black_color"
+                android:text="Contact no - "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/mobile_edit_tv"
+
+                android:singleLine="true"
+                android:textColor="@color/blue_header"
+                android:text="15rohitagrawal:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+
+
+        <GridView
+                   android:visibility="visible"
+                android:layout_below="@id/mobile_layout"
+                android:horizontalSpacing="1dp"
+                android:verticalSpacing="1dp"
+                android:id="@+id/classified_item_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="1" >
+            </GridView>
+
+
+
+
+
+            <TextView
+                android:id="@+id/total_comment_text_view"
+                android:textColor="@color/comment_all_text_color"
+                android:layout_marginTop="@dimen/margin_20"
+                android:layout_marginBottom="@dimen/margin_20"
+                android:drawablePadding="@dimen/padding_5"
+                android:drawableLeft="@drawable/comment_icon"
+                android:text="10 Comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:background="@color/gray_color"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"></LinearLayout>
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/comment_relative_layout"
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <RelativeLayout
+                    android:id="@+id/image_view_ralative_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/commenter_image_view"
+                    android:background="@drawable/default_img_profile"
+                    android:layout_width="@dimen/member_profile_size"
+                    android:layout_height="@dimen/member_profile_size"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                    <ProgressBar
+                        android:visibility="gone"
+                        android:id="@+id/comment_user_progrss_bar"
+                        android:layout_width="@dimen/cross_image_sze"
+                        android:layout_height="@dimen/cross_image_sze"
+                        android:layout_centerInParent="true" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/delete_cmt_btn"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/cancel_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+
+                <LinearLayout
+                    android:id="@+id/comment_box_layout"
+                    android:layout_toLeftOf="@id/delete_cmt_btn"
+                    android:layout_toRightOf="@+id/image_view_ralative_layout"
+                     android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:singleLine="true"
+                        android:id="@+id/commenter_name_tv"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/text_size14"
+                        android:text="Rohit Agrawal"
+                        android:textColor="@color/black_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/comment_tv"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:layout_toRightOf="@+id/commenter_image_view"
+                        android:textSize="@dimen/text_size12"
+                        android:text="I am sending your jhdasf\nfjsdf dsfjkdsa f ddjfhsd sdf sdkjfhdskjfsfsd f"
+                        android:textColor="@color/black_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:background="@color/gray_color"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"></LinearLayout>
+
+
+          <RelativeLayout
+              android:layout_marginTop="@dimen/margin_10"
+
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+
+               <ImageView
+                   android:id="@+id/send_comment_btn"
+                   android:layout_alignParentRight="true"
+                   android:background="@drawable/send"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+
+              <EditText
+                  android:padding="@dimen/padding_8"
+                   android:id="@+id/comment_edit_tv"
+                  android:layout_centerVertical="true"
+                  android:gravity="center_vertical"
+                  android:layout_alignParentLeft="true"
+                  android:layout_toLeftOf="@+id/send_comment_btn"
+                  android:background="@android:color/transparent"
+                  android:textSize="@dimen/text_size10"
+                  android:maxLines="3"
+                  android:maxLength="250"
+                  android:textColor="@color/black_color"
+                  android:hint="Write Comment in 250 character"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content" />
+
+
+          </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"></LinearLayout>
+
+
+
+
+</LinearLayout>

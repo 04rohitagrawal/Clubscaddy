@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:id="@+id/parentPanel"
+    android:orientation="vertical">
+
+    <com.clubscaddy.custumview.CustomScrollView
+        android:id="@+id/dropInScroll"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_20"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_20"
+                android:text="Format"
+                android:textColor="@color/white_color"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_2"
+                android:background="@drawable/edittext_background"
+                android:paddingRight="@dimen/padding_10"
+                android:visibility="gone">
+
+                <Spinner
+                    android:paddingRight="@dimen/padding_5"
+
+                    style="@style/SpinnerAsEditText"
+                    android:overlapAnchor="false"
+                    android:id="@+id/select_format_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/down_arrow" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/add_player_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_2"
+                android:visibility="visible">
+
+                <TextView
+                    android:textSize="@dimen/text_size16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_20"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:text="How many players you are looking for?"
+                    android:textColor="@color/white_color" />
+
+                <RelativeLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:layout_marginTop="@dimen/margin_5"
+                    >
+
+                    <Spinner
+                        android:paddingRight="@dimen/padding_5"
+
+                        android:spinnerMode="dropdown"
+                        android:background="@drawable/edittext_background"
+                        android:id="@+id/select_player_qty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/margin_10" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/margin_5">
+
+                    <TextView
+                        android:textSize="@dimen/text_size16"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_20"
+                        android:layout_marginRight="@dimen/margin_10"
+                        android:text="@string/date"
+                        android:textColor="@color/white_color" />
+
+                    <TextView
+                        android:layout_marginTop="@dimen/margin_2"
+                        android:id="@+id/select_date"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:layout_marginRight="@dimen/margin_10"
+                        android:background="@drawable/edittext_background"
+                        android:drawableRight="@drawable/month_calendar"
+                        android:gravity="left|center_vertical"
+                        android:imeOptions="actionNext"
+                        android:inputType="textEmailAddress"
+                        android:longClickable="false"
+                        android:padding="@dimen/padding_5"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+
+                        android:textColor="@color/white_edit_text_color"
+
+                        android:textColorHint="@color/gray_color"
+                        android:textSize="@dimen/text_size14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_10"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:textSize="@dimen/text_size16"
+                        android:layout_marginTop="@dimen/margin_5"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:layout_marginRight="@dimen/margin_10"
+                        android:text="@string/time"
+                        android:textColor="@color/white_color" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                       >
+
+                        <Spinner
+                            android:spinnerMode="dropdown"
+                            android:paddingRight="@dimen/padding_5"
+
+                            android:background="@drawable/edittext_background"
+                            android:id="@+id/select_time"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:paddingLeft="@dimen/margin_10"
+                            />
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_20"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_20"
+                android:text="Notified"
+                android:textColor="@color/white_color"
+                android:visibility="gone" />
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RadioButton
+                    android:id="@+id/group_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="From Group"
+                    android:textColor="@color/white_color"
+                    android:textSize="@dimen/text_size12" />
+            </RadioGroup>
+
+            <TextView
+                android:textSize="@dimen/text_size16"
+                android:id="@+id/error_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_15"
+                android:layout_marginRight="@dimen/margin_10"
+                android:text="Invite the following group"
+                android:textColor="@color/white_color" />
+
+            <RelativeLayout
+                android:id="@+id/add_group_relative"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_2"
+
+                >
+
+                <Spinner
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:spinnerMode="dropdown"
+                    android:paddingRight="@dimen/padding_5"
+                    android:paddingLeft="@dimen/padding_10"
+                    android:background="@drawable/edittext_background"
+                    android:dropDownVerticalOffset="5dp"
+                    android:id="@+id/add_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Add Group"
+                    android:textColor="@color/white_edit_text_color"
+                    android:textColorHint="@color/gray_color" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_5"
+                android:layout_marginLeft="@dimen/margin_20"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_5">
+
+                <TextView
+                    android:textSize="@dimen/text_size16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Message"
+                    android:textColor="@color/white_color" />
+
+
+                <TextView
+                    android:textSize="@dimen/text_size16"
+
+                    android:id="@+id/discription_textview_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="0/250"
+                    android:textColor="@color/white_color" />
+
+
+            </RelativeLayout>
+
+
+            <EditText
+                android:id="@+id/description"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:background="@drawable/edittext_background"
+                android:gravity="left|top"
+                android:hint="Enter message"
+                android:maxLength="250"
+
+               android:textSize="@dimen/text_size18"
+                android:maxLines="4"
+
+                android:minLines="5"
+                android:padding="@dimen/padding_5"
+                android:paddingLeft="@dimen/margin_15"
+                android:paddingRight="@dimen/margin_15"
+                android:textColor="@color/white_edit_text_color" />
+
+
+            <TextView
+                android:id="@+id/select_group_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_20"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_20"
+                android:text="Select Group"
+                android:textColor="@color/white_color"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/select_group_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_20"
+                android:background="@drawable/edittext_background"
+                android:editable="false"
+                android:focusable="false"
+                android:gravity="center_vertical"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:longClickable="false"
+                android:paddingBottom="@dimen/padding_10"
+                android:paddingLeft="@dimen/margin_30"
+                android:paddingRight="@dimen/margin_30"
+                android:paddingTop="@dimen/padding_10"
+                android:text="Add Group"
+                android:textColor="@color/white_edit_text_color"
+                android:textColorHint="@color/gray_color" />
+
+            <Button
+                android:id="@+id/done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/okbutton"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/text_size18" />
+        </LinearLayout>
+    </com.clubscaddy.custumview.CustomScrollView>
+
+</LinearLayout>

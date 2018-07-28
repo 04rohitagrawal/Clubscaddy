@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray_color"
+    android:minWidth="300dp"
+    android:orientation="vertical"
+     >
+
+    <TextView
+        android:id="@+id/forgotpw_forgotMsg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@color/blue_header"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/padding_10"
+        android:text="@string/forgot_msg"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/text_size14" />
+
+    <EditText
+        android:id="@+id/forgotpw_email"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/edittext_35"
+        android:layout_below="@+id/forgotpw_forgotMsg"
+        android:layout_margin="@dimen/margin_10"
+        android:background="@drawable/edittext_background"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="5dp"
+        android:hint="@string/email"
+        android:imeOptions="actionNext"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="@dimen/margin_20"
+        android:textColor="@color/white_edit_text_color"
+        android:textColorHint="@color/gray_color" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/forgotpw_email"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/forgotpw_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="@drawable/submit"
+            android:padding="@dimen/margin_10"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size20" 
+            android:layout_marginRight="@dimen/margin_10"
+            />
+
+        <Button
+            android:id="@+id/forgotpw_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/forgotpw_submit"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="@drawable/cancel"
+            android:padding="@dimen/margin_10"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size20" 
+            android:layout_marginLeft="@dimen/margin_10"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

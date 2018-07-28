@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    android:background="@color/white_color"
+    android:orientation="vertical" >
+
+  
+
+    <LinearLayout
+        android:id="@+id/dir_linearlayout_parent"
+        android:paddingTop="@dimen/padding_5"
+         android:paddingBottom="@dimen/padding_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/RoundedRectangle"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            
+           
+            android:id="@+id/dir_linearlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_marginRight="@dimen/margin_5"
+            android:layout_marginBottom="@dimen/margin_5"
+            android:orientation="horizontal" >
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/whitecolor_background" >
+
+                <ImageView
+                    android:id="@+id/dir_default_logo"
+                    android:layout_width="@dimen/dash_board_image_size"
+                    android:layout_height="@dimen/dash_board_image_size"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/padding_5"
+                    android:src="@drawable/logo_profile" />
+
+                <ProgressBar
+
+                    android:id="@+id/prog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+            </FrameLayout>
+
+            <RelativeLayout
+                android:orientation="vertical"
+
+                android:layout_marginLeft="@dimen/margin_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:background="@drawable/clublogo_background" >
+
+                <TextView
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_gravity="left"
+                    android:id="@+id/date_tv"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:textSize="@dimen/text_size12"
+                    android:text="My date"
+                    android:textColor="#808080"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                        <TextView
+                            android:layout_marginRight="@dimen/margin_5"
+                             android:layout_marginLeft="@dimen/margin_5"
+                            android:gravity="center_vertical"
+                            android:id="@+id/dir_clubMessage"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_above="@id/date_tv"
+                            android:layout_centerVertical="true"
+
+
+
+                            android:text="@string/club_message"
+                            android:textColor="@color/black_color"
+                            android:textSize="@dimen/text_size11" />
+
+
+
+
+
+
+
+                <ImageView
+                      android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/black_edit_pencil"
+                    android:layout_gravity="right"
+                    android:id="@+id/editClubMessage"
+                    android:visibility="gone"
+                     />
+
+
+
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+           android:weightSum="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+           android:gravity="center"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_marginRight="@dimen/margin_5"
+            
+            android:background="@drawable/whitecolor_background"
+            android:padding="@dimen/padding_5" >
+
+            <LinearLayout
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:inputType="text"
+                    android:padding="3dp"
+                    android:text="@string/temperature"
+                    android:textColorHint="@color/black_color"
+                    android:textSize="@dimen/text_size10" />
+
+                <TextView
+                    android:id="@+id/tempurature_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_blue"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:inputType="text"
+                    android:longClickable="false"
+                    android:minEms="5"
+                    android:paddingTop="@dimen/margin_10"
+                    android:paddingBottom="@dimen/margin_10"
+                    android:text="5"
+                    android:textColor="@color/white_color"
+                    android:textColorHint="@color/black_color"
+                    android:textSize="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/court_in_use_layout"
+                android:visibility="visible"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:focusable="false"
+                    android:inputType="text"
+                    android:padding="3dp"
+                    android:id="@+id/court_in_use_tv"
+                    android:text="@string/courts_in_use"
+                    android:textColorHint="@color/black_color"
+                    android:textSize="@dimen/text_size10" />
+
+                <TextView
+                    android:id="@+id/court_in_use"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/rounded_blue"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:inputType="text"
+                    android:longClickable="false"
+                    android:minEms="5"
+                    android:paddingTop="@dimen/margin_10"
+                    android:paddingBottom="@dimen/margin_10"
+                    android:paddingLeft="@dimen/padding_5"
+                    android:paddingRight="@dimen/padding_5"
+                    android:textColor="@color/white_color"
+                    android:textColorHint="@color/black_color"
+                    android:textSize="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/open_court_tv_layout"
+
+                android:visibility="visible"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/open_court_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:editable="false"
+                    android:focusable="false"
+                    android:inputType="text"
+                    android:padding="3dp"
+                    android:text="@string/open_courts"
+                    android:textColorHint="@color/black_color"
+                    android:textSize="@dimen/text_size10" />
+
+                <TextView
+                    android:id="@+id/open_court"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/margin_10"
+                    android:paddingBottom="@dimen/margin_10"
+                    android:paddingLeft="@dimen/padding_5"
+                    android:paddingRight="@dimen/padding_5"
+                    android:background="@drawable/rounded_blue"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:inputType="text"
+                    android:longClickable="false"
+                    android:minEms="5"
+
+                    android:textColor="@color/white_color"
+                    android:textColorHint="@color/black_color"
+                    android:textSize="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <GridView
+       android:layout_margin="@dimen/margin_2"
+        android:id="@+id/dir_grideview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        
+       
+        android:gravity="center"
+        android:horizontalSpacing="1dp"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="1dp" />
+
+</LinearLayout>

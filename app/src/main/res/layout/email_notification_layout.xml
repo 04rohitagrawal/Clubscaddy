@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+<TextView 
+    android:gravity="center_horizontal"
+    android:textSize="@dimen/text_size14"
+    android:textColor="@android:color/white"
+    android:background="@color/blue_header"
+    android:padding="@dimen/padding_10"
+    android:text="Message Notification/Email"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    />
+    <TextView
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_marginBottom="@dimen/padding_3"
+        android:id="@+id/discription_textview_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="0/1000"
+        android:textColor="@color/black_color" />
+<LinearLayout 
+     android:layout_margin="@dimen/margin_5"
+    android:background="@android:color/black"
+    android:padding="1dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+
+
+
+
+
+    <EditText
+        android:maxLength="1000"
+    android:padding="@dimen/padding_5"
+    android:gravity="top|left"
+    android:background="@android:color/white"
+   android:id="@+id/email_notification_msg"
+    android:layout_height="wrap_content"
+    android:maxLines="5"
+        android:minLines="5"
+    android:layout_width="match_parent"
+    />
+</LinearLayout>
+  
+
+ <LinearLayout 
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:weightSum="9"
+     >
+     <TextView 
+         android:gravity="center"
+          android:paddingTop="@dimen/padding_10"
+         android:paddingBottom="@dimen/padding_10"
+         android:id="@+id/cancel_dialog_btn"
+         android:textColor="@android:color/white"
+         android:text="Cancel"
+         android:background="#FF0000"
+         android:layout_margin="@dimen/margin_2"
+         android:layout_width="0dp"
+         android:layout_weight="3"
+         android:layout_height="wrap_content"
+         />
+       <TextView 
+           android:gravity="center"
+           android:paddingTop="@dimen/padding_10"
+           android:paddingBottom="@dimen/padding_10"
+           android:id="@+id/email_send_btn"
+         android:textColor="@android:color/white"
+         android:text="Email"
+         android:background="@color/green_selection_color"
+         android:layout_margin="@dimen/margin_2"
+         android:layout_width="0dp"
+         android:layout_weight="3"
+         android:layout_height="wrap_content"
+         />
+         <TextView 
+             android:gravity="center"
+             android:paddingTop="@dimen/padding_10"
+             android:paddingBottom="@dimen/padding_10"
+               android:id="@+id/notification_send_btn"
+         android:background="@color/blue_header"
+         android:text="Notification"
+         android:textColor="#FFFFFF"
+         android:layout_margin="@dimen/margin_2"
+         android:layout_width="0dp"
+         android:layout_weight="3"
+         android:layout_height="wrap_content"
+         />
+ </LinearLayout>
+
+</LinearLayout>

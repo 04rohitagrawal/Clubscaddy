@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+
+    android:background="@color/white_color"
+    android:orientation="vertical">
+
+    <TextView
+
+        android:id="@+id/rating_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="sjsdfkdlf"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size14" />
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/action_divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider_line_color"></LinearLayout>
+
+</LinearLayout>

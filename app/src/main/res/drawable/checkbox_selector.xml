@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:drawable="@drawable/off_btn" 
+        android:state_checked="false"/>
+    <item android:drawable="@drawable/on_btn" 
+        android:state_checked="true"/>
+    <item android:drawable="@drawable/off_btn"/>    
+</selector>
+
+<!-- <selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:drawable="@drawable/inactive_check_box" 
+        android:state_checked="false"/>
+    <item android:drawable="@drawable/active_check_box" 
+        android:state_checked="true"/>
+    <item android:drawable="@drawable/inactive_check_box"/>    
+</selector> -->

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/white_color"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/dropin_layout"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/dropin_text"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/drop_ins"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/text_size14" />
+
+            <TextView
+                android:id="@+id/dropin_line"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@color/black_color"
+                android:gravity="bottom" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/groups_layout"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/groups_text"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/groups"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/text_size14" />
+
+            <TextView
+                android:id="@+id/groups_line"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@color/black_color"
+                android:gravity="bottom"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp" 
+        android:layout_above="@+id/add_group_drop_in"
+        android:layout_below="@+id/header"
+        android:dividerHeight="0.5dp"
+        android:divider="@color/gray_color" 
+        >
+    </ListView>
+
+    <ExpandableListView
+        android:id="@+id/expandable_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/add_group_drop_in"
+        android:layout_below="@+id/header" 
+        
+        >
+    </ExpandableListView>
+
+    <Button
+        android:id="@+id/add_group_drop_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:background="@drawable/add_btn"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/text_size18" />
+
+</RelativeLayout>

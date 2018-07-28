@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color"
+    android:orientation="vertical" >
+
+  
+
+    <LinearLayout
+        android:paddingTop="@dimen/padding_5"
+         android:paddingBottom="@dimen/padding_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/RoundedRectangle"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            
+           
+            android:id="@+id/dir_linearlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_5"
+           
+            android:layout_marginBottom="@dimen/margin_5"
+            android:orientation="horizontal" >
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/whitecolor_background" >
+
+                <ImageView
+                    android:id="@+id/dir_default_logo"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:layout_margin="@dimen/padding_5"
+                    android:scaleType="center"
+                    android:src="@drawable/logo_profile" />
+
+                <ProgressBar
+                    android:id="@+id/prog"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center" />
+            </FrameLayout>
+
+            <RelativeLayout
+                android:layout_marginLeft="@dimen/margin_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/clublogo_background" >
+
+                <TextView
+                  android:gravity="center_horizontal"
+                    android:id="@+id/dir_clubMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1"
+                    android:padding="@dimen/padding_5"
+                    android:text="@string/club_message"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/text_size16" />
+
+                <ImageView
+                      android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/black_edit_pencil"
+                    android:layout_gravity="right"
+                    android:id="@+id/editClubMessage"
+                    android:visibility="gone"
+                     />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+           
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+           
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_marginRight="@dimen/margin_5"
+            
+            android:background="@drawable/whitecolor_background"
+            android:padding="@dimen/padding_5" >
+
+            <LinearLayout
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:inputType="text"
+                    android:padding="3dp"
+                    android:text="@string/temperature"
+                    android:textColorHint="@color/black_color"
+                    android:textSize="@dimen/text_size10" />
+
+                <TextView
+                    android:id="@+id/tempurature_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/edittext_32"
+                    android:background="@drawable/rounded_blue"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:inputType="text"
+                    android:longClickable="false"
+                    android:minEms="5"
+                    android:padding="5dp"
+                    android:text="5"
+                    android:textColor="@color/white_color"
+                    android:textColorHint="@color/black_color"
+                    android:textSize="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_2"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:inputType="text"
+                    android:padding="3dp"
+                    android:text="@string/courts_in_use"
+                    android:textColorHint="@color/black_color"
+                    android:textSize="@dimen/text_size10" />
+
+                <TextView
+                    android:id="@+id/court_in_use"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/edittext_32"
+                    android:background="@drawable/rounded_blue"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:inputType="text"
+                    android:longClickable="false"
+                    android:minEms="5"
+                    android:padding="5dp"
+                    android:textColor="@color/white_color"
+                    android:textColorHint="@color/black_color"
+                    android:textSize="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_2"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:inputType="text"
+                    android:padding="3dp"
+                    android:text="@string/open_courts"
+                    android:textColorHint="@color/black_color"
+                    android:textSize="@dimen/text_size10" />
+
+                <TextView
+                    android:id="@+id/open_court"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/edittext_32"
+                    android:background="@drawable/rounded_blue"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:inputType="text"
+                    android:longClickable="false"
+                    android:minEms="5"
+                    android:padding="5dp"
+                    android:textColor="@color/white_color"
+                    android:textColorHint="@color/black_color"
+                    android:textSize="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <GridView
+       android:layout_margin="@dimen/margin_2"
+        android:id="@+id/dir_grideview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+       
+        android:gravity="center"
+        android:horizontalSpacing="1dp"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="1dp" />
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:drawableRight="@drawable/next_arrow"
+        android:id="@+id/broadcastmessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_color"
+        android:drawableLeft="@drawable/logo_profile"
+        android:gravity="center_vertical"
+        android:padding="@dimen/padding_10"
+        android:singleLine="true"
+        android:text="Hello" />
+
+</LinearLayout>

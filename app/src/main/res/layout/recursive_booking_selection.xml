@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="40dp"
+            android:background="@color/light_gray_color" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/light_gray_color"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/blue_header"
+                    android:padding="5dp" >
+
+                    <TextView
+                        android:id="@+id/start_date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/white_color"
+                        android:drawableRight="@drawable/calendar_icon"
+                        android:gravity="center"
+                        android:hint="Start Date"
+                        android:padding="@dimen/padding_10"
+                        android:textColor="@color/black_color" />
+
+                    <TextView
+                        android:id="@+id/end_date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/white_color"
+                        android:drawableRight="@drawable/calendar_icon"
+                        android:gravity="center"
+                        android:hint="End Date"
+                        android:padding="@dimen/padding_10"
+                        android:textColor="@color/black_color" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white_color"
+                    android:orientation="horizontal"
+                    android:padding="10dp" >
+
+                    <LinearLayout
+                        android:id="@+id/sun"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="5dp" >
+
+                        <ImageView
+                            android:id="@+id/sun_tick"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            android:src="@drawable/small_tick"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/sun_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:clickable="false"
+                            android:text="@string/sunday"
+                            android:textColor="@color/black_color" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/mon"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="5dp" >
+
+                        <ImageView
+                            android:id="@+id/mon_tick"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            android:src="@drawable/small_tick"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/mon_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:clickable="false"
+                            android:text="@string/monday"
+                            android:textColor="@color/black_color" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="5dp" >
+
+                        <ImageView
+                            android:id="@+id/tue_tick"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            android:src="@drawable/small_tick"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/tue_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:clickable="false"
+                            android:text="@string/tuesday"
+                            android:textColor="@color/black_color" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/wed"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="5dp" >
+
+                        <ImageView
+                            android:id="@+id/wed_tick"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            android:src="@drawable/small_tick"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/wed_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:clickable="false"
+                            android:text="@string/wednesday"
+                            android:textColor="@color/black_color" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/thu"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="5dp" >
+
+                        <ImageView
+                            android:id="@+id/thu_tick"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            android:src="@drawable/small_tick"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/thu_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:clickable="false"
+                            android:text="@string/thursday"
+                            android:textColor="@color/black_color" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fri"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="5dp" >
+
+                        <ImageView
+                            android:id="@+id/fri_tick"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            android:src="@drawable/small_tick"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/fri_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:clickable="false"
+                            android:text="@string/friday"
+                            android:textColor="@color/black_color" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/sat"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="5dp" >
+
+                        <ImageView
+                            android:id="@+id/sat_tick"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            android:src="@drawable/small_tick"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/sat_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:clickable="false"
+                            android:text="@string/satuarday"
+                            android:textColor="@color/black_color" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/date_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:divider="@null"
+                    android:dividerHeight="5dp"
+                    android:visibility="gone" >
+                </ListView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/blue_header"
+                    android:padding="5dp" >
+
+                    <TextView
+                        android:id="@+id/court"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white_color"
+                        android:drawableRight="@drawable/court_icon"
+                        android:gravity="center"
+                        android:padding="@dimen/padding_10"
+                        android:text="@string/court"
+                        android:textColor="@color/black_color" />
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/court_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:divider="@null"
+                    android:dividerHeight="5dp"
+                    android:visibility="gone" >
+                </ListView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/blue_header"
+                    android:padding="5dp" >
+
+                    <TextView
+                        android:id="@+id/slot"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white_color"
+                        android:drawableRight="@drawable/slot_icon"
+                        android:gravity="center"
+                        android:padding="@dimen/padding_10"
+                        android:text="@string/slot"
+                        android:textColor="@color/black_color" />
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/slot_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:divider="@null"
+                    android:dividerHeight="5dp"
+                    android:visibility="gone" >
+                </ListView>
+            </LinearLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/verify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/blue_header"
+            android:gravity="center"
+            android:padding="@dimen/padding_10"
+            android:text="Verify"
+            android:textColor="@color/white_color" />
+    </RelativeLayout>
+
+</LinearLayout>

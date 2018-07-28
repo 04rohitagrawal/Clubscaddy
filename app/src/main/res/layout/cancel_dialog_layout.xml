@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/calcel_dialog_btn"
+        android:gravity="center"
+        android:text="Cancel"
+        android:textSize="@dimen/text_size18"
+        android:textColor="@color/white_color"
+        android:padding="@dimen/padding_10"
+        android:background="@color/blue_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

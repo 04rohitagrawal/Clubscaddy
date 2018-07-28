@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/check_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_20"
+        android:layout_marginLeft="@dimen/margin_10"
+
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_20"
+
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="No show filter :"
+            android:textColor="@color/white_color" />
+
+
+
+
+
+            <Spinner
+                android:layout_weight="1"
+                android:background="@drawable/edittext_background"
+                android:layout_width="0dp"
+                android:dropDownSelector="@color/transparent"
+                android:id="@+id/select_format_spinner"
+                android:layout_height="wrap_content"
+
+                android:gravity="center_vertical" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/no_show_report_member_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:divider="@color/gray_color"
+        android:dividerHeight="0.5dp">
+
+    </ListView>
+
+
+</LinearLayout>

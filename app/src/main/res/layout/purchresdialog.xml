@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding_3"
+    android:background="@drawable/white_circle_back1"
+    android:orientation="vertical"
+     >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="@dimen/padding_3"
+        android:textColor="@color/black_color"
+        android:textSize="@dimen/text_size16" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/text"
+        android:gravity="center"
+        android:padding="@dimen/padding_3"
+        android:text="Are you sure you want to cancel this booking?"
+        android:textColor="@color/black_color"
+        android:textSize="@dimen/text_size14" />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/margin_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+        
+     <LinearLayout 
+            android:background="@color/gray_color"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            ></LinearLayout>
+        <TextView
+            android:textSize="@dimen/text_size16"
+            android:id="@+id/sixmonth_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/padding_10"
+            android:text="Six month"
+            android:textColor="@color/blue_header" />
+
+        <LinearLayout 
+            android:background="@color/gray_color"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            ></LinearLayout>
+
+        <TextView
+             android:textSize="@dimen/text_size16"
+            android:id="@+id/twalemonth_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/padding_10"
+            android:text="Twelve month"
+            android:textColor="@color/blue_header" />
+        <LinearLayout 
+            android:background="@color/gray_color"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            ></LinearLayout>
+        <TextView
+             android:textSize="@dimen/text_size16"
+            android:id="@+id/cancel_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/padding_10"
+            android:text="Cancel"
+            android:textColor="@color/blue_header" />
+   
+
+</LinearLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:visibility="visible"
+        android:layout_marginTop="@dimen/margin_2"
+        android:background="@color/white_color"
+        android:paddingTop="@dimen/padding_5"
+        android:paddingBottom="1dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        >
+        <LinearLayout
+
+            android:id="@+id/edit_event_tab"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_margin="@dimen/margin_5"
+                android:textSize="@dimen/text_size14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black_color"
+                android:id="@+id/edit_event_tab_tv"
+                android:text="Edit Event"
+                />
+            <View
+                android:visibility="invisible"
+                android:id="@+id/edit_event_tab_line"
+                android:layout_marginTop="@dimen/margin_5"
+                android:background="@color/black_color"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/manage_event_tab"
+            >
+            <TextView
+                android:layout_margin="@dimen/margin_5"
+                android:textSize="@dimen/text_size14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black_color"
+                android:id="@+id/manage_event_tab_tv"
+                android:text="Manage Event"
+                />
+            <View
+                android:id="@+id/manage_event_tab_line"
+                android:visibility="visible"
+
+                android:layout_marginTop="@dimen/margin_5"
+                android:background="@color/black_color"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="@dimen/padding_10"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/text_size14"
+        android:text="Add Moderator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <AutoCompleteTextView
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:textSize="@dimen/text_size16"
+        android:layout_marginTop="@dimen/margin_10"
+        android:hint="Add moderator"
+        android:completionThreshold="1"
+        android:id="@+id/member_name_edit_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/edittext_35"
+           android:padding="@dimen/padding_5"
+        android:background="@drawable/edittext_background"
+        android:drawablePadding="20dp"
+        android:imeOptions="actionNext"
+        android:inputType="textEmailAddress"
+
+        android:textColor="@color/white_edit_text_color"
+        android:textColorHint="@color/gray_color" />
+
+    <RelativeLayout
+        android:layout_marginBottom="@dimen/margin_10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+
+                 android:textColor="@color/white_color"
+            android:layout_centerHorizontal="true"
+            android:background="@color/green"
+
+            android:layout_alignParentBottom="true"
+            android:paddingTop="@dimen/padding_10"
+            android:paddingBottom="@dimen/padding_10"
+            android:paddingLeft="@dimen/margin_20"
+            android:paddingRight="@dimen/margin_20"
+
+            android:text="Start Event"
+            android:id="@+id/change_event_status_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <ListView
+            android:layout_marginTop="@dimen/padding_10"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_above="@id/change_event_status_btn"
+            android:dividerHeight="@dimen/margin_5"
+            android:divider="@android:color/transparent"
+            android:id="@+id/event_moderotor_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

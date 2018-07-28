@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Clubs Caddy</string>
+    <string name="email">Enter Email Address</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="forgot_pw">Forgot Password?</string>
+    <string name="empty_email">Please Enter Email Address</string>
+    <string name="empty_password">Please Enter Password</string>
+    <string name="correct_email">Please Enter Correct Email</string>
+    <string name="valid_moble_numver">Please Enter Valid Contact No.</string>
+    <string name="valid_facebbok_url">Please Enter Correct FaceBook Url.</string>
+
+    <string name="valid_linkedin_url">Please Enter Correct Linkedin Url.</string>
+
+    <string name="valid_twitter_url">Please Enter Correct Twitter Url.</string>
+    <string name="valid_instragram_url">Please Enter Correct Instagram Url.</string>
+    <string name="correct_length">Password Must be 6 Character</string>
+    <string name="check_internet_connection">Please try again.</string>
+    <string name="invalid_user">Please Check Email Id and Password</string>
+    <string name="server_error">Server Response Error</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+    <string name="old_date">You are looking at a past date</string>
+    <string name="forgot_msg">Forgot Password</string>
+    <string name="director_dashboard">Director Dashboard</string>
+    <string name="club_events">Events / Classes</string>
+    <string name="coach_dashboard">Director Dashboard</string>
+    <string name="admin_dashboard">Admin Dashboard</string>
+    <string name="member_dashboard">Member Dashboard</string>
+    <string name="add_admin">Add Admin</string>
+    <string name="no_internet_connection">No Internet Connection</string>
+    <string name="broadcast">Broadcast Info</string>
+    <string name="polling">Polling Info</string>
+    <string name="broadcast_poling">Communications</string>
+    <string name="score_detail">Score Details</string>
+    <string name="Create_Score">Create Score</string>
+    <string name="statics">Classifieds</string>
+
+    <string name="coaches">Coaches</string>
+
+    <string name="news_feed">News</string>
+    <string name="add_news">Create News</string>
+    <string name="edit_news">Edit Events</string>
+    <string name="edit_event">Edit Events</string>
+    <string name="add_event">Add Events</string>
+    <string name="notifications">Notification</string>
+    <string name="notifications_details">Notifications Details</string>
+    <string name="add_drop_in">Add Match Maker</string>
+    <string name="add_group">Create Group</string>
+    <string name="edit_group">Edit Group</string>
+    <string name="group_detail">Create Group</string>
+    <string name="event_detail">Event Details</string>
+    <string name="reservation">Court Reservation</string>
+    <string name="add_member">Add Member</string>
+    <string name="change_password">Change password</string>
+    <string name="change_email_id">Change email id</string>
+    <string name="change_moderator">Manage Event</string>
+    <string name="edit_member">Edit Member</string>
+    <string name="logout">Logout</string>
+    <string name="logout_msg">Do you want to Logout?</string>
+    <string name="yes">Yes</string>
+    <string name="no_group_error">Please add a group first.</string>
+    <string name="default_seting">Default Setting</string>
+    <string name="no">No</string>
+    <string name="add_coach">Add Coach</string>
+    <string name="add">+ Add</string>
+    <string name="update_club_logo">Update Club Logo</string>
+    <string name="manage_admin">Manage admins</string>
+
+    <string name="court_reservation_setting">Court Reservation Setting</string>
+    <string name="manage_coach">Manage coaches</string>
+    <string name="manage_member">Manage Member</string>
+    <string name="members_directory">Member Directory</string>
+    <string name="no_record_found">No Record Found</string>
+    <string name="manage_club_logo_icon">Change club logo</string>
+    <string name="first_name">First Name</string>
+    <string name="event_name">Event Name</string>
+    <string name="sort_by">Sort By</string>
+
+    <string name="last_name">Last Name</string>
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="deadlinedate">Deadline Date</string>
+    <string name="user_email">Email Address</string>
+    <string name="phone">Contact No</string>
+
+    <string name="face_book_link">FaceBook url</string>
+    <string name="twitter_link">Twitter url</string>
+    <string name="instramgram_link">Instagram url</string>
+    <string name="send_msg_link">Send msg url</string>
+    <string name="linkedin_link">Linkedin url</string>
+
+    <string name="event_cost">Event Cost</string>
+    <string name="gender">Gender:</string>
+    <string name="junior">Junior:</string>
+    <string name="rating">Rating</string>
+    <string name="empty_first_name">Enter First Name</string>
+    <string name="empty_event_name">Please enter event name</string>
+    <string name="empty_last_name">Enter Last Name</string>
+    <string name="edit_admin">Edit Admin</string>
+    <string name="edit_coach">Edit Coach</string>
+
+    <string name="temperature">Temperature</string>
+    <string name="courts_in_use">Courts in use</string>
+    <string name="open_courts">Open Courts</string>
+    <string name="club_message">Club is open for normal hours. Come and enjoy beautiful sunny day</string>
+    <string name="league_matches">League matches</string>
+    <string name="privacy_option">Privacy options</string>
+    <string name="contact_support">Contact support</string>
+    <string name="recently_played">Recently played matches(past 6 month)</string>
+    <string name="winning_percentage">Winning percentage</string>
+    <string name="awards_and_championships">Awards/Championships</string>
+    <string name="profile">Profile</string>
+    <string name="change_pw">Change Password</string>
+    <string name="change_email">Change Email</string>
+    <string name="change_club_message">Change club message</string>
+
+    <string name="change_club_message_h">Change Club Message</string>
+
+
+    <string name="manage_support_type">Manage sport type</string>
+
+    <string name="about">About me</string>
+    <string name="my_profile">My ProfileE</string>
+    <string name="edit_profile">Edit Profile</string>
+
+    <string name="preference">Preference</string>
+    <string name="advanced">Advanced</string>
+    <string name="title_activity_admin_fragment_manger">AdminFragmentMangerActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_coach_fragment_manager">CoachFragmentManagerActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_member_fragmentt_manager">MemberFragmenttManagerActivity</string>
+    <string name="court_max_hr">Court hour (max)</string>
+    <string name="slot_duration_min">Slot duration (min)</string>
+    <string name="advance_booking_week">Advance Booking (week)</string>
+    <string name="recursive_booking_month">Recursive Booking (month)</string>
+    <string name="start_time">Start Time</string>
+    <string name="end_time">End Time</string>
+    <string name="reservation_per_week">Reservation (per week)</string>
+    <string name="reservation_per_day">Reservation(per day)</string>
+    <string name="select_all">SELECT ALL</string>
+    <string name="cancel_slot">Do you want to cancel booking? </string>
+    <string name="done">Done</string>
+    <string name="book">Book</string>
+    <string name="select_member">SELECT MEMBER FOR RESERVE</string>
+    <string name="enter_email">Email Address</string>
+    <string name="new_password">New Password</string>
+    <string name="old_password">Old Password</string>
+    <string name="confirm_password">Confirm Password</string>
+
+    <string name="enter_valid_email">Please Enter Valid Email.</string>
+    <string name="enter_new_password">Please Enter New Password</string>
+    <string name="enter_confirm_password">Please Enter Confirm Password</string>
+    <string name="password_doesnt_match">Password not matching.</string>
+
+    <string name="bulk_booking">Bulk Book</string>
+    <string name="recursive_booking">Recursive Book</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="court">Court</string>
+    <string name="slot">Slot</string>
+    <string name="sunday">Sun</string>
+    <string name="monday">Mon</string>
+    <string name="tuesday">Tue</string>
+    <string name="wednesday">Wed</string>
+    <string name="thursday">Thu</string>
+    <string name="friday">Fri</string>
+    <string name="satuarday">Sat</string>
+    <string name="drop_ins">Create Match Maker</string>
+    <string name="groups">Groups</string>
+    <string name="Participants">Participants</string>
+    <string name="event_description">Event Description</string>
+
+
+    <string name="my_reservation">My Reservation</string>
+    <string name="manage_reservation_calanfer">Manage Reservation</string>
+
+
+    <string name="classified_title">Title</string>
+
+    <string name="schduler_name">Schedule Name</string>
+
+    <string name="enter_schduler_name">Enter Schedule Name</string>
+    <string name="schduler_description">Schduler Description</string>
+    <string name="enter_schduler_description">Enter Schduler Description</string>
+
+
+    <string name="location">Location</string>
+
+    <string name="enter_location">Enter Location</string>
+
+
+    <string name="enter_date">Enter date</string>
+
+    <string name="enter_time">Enter time</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="demo_min_label"></string>
+    <string name="demo_max_label"></string>
+
+
+    <string name="facebook_app_id">1188490847925780</string>
+
+    <string name="class_name">Class Name</string>
+
+
+    <string name="filter_message_by">Filter By</string>
+
+    <string name="manage_club_logo_icons">Change Club Logo</string>
+    <string name="file_provider_authority" translatable="false">com.quiro.fileproviderexample.fileprovider</string>
+
+</resources>

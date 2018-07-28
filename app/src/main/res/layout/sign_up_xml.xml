@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/padding_8"
+    android:paddingRight="@dimen/padding_8"
+    android:paddingTop="@dimen/padding_8" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_10"
+                    android:text="Please fill up the section below and submit. You will get an email from us with a password. Go back to login screen and use the email and password you received in your email to login.We will make you a member of a demo club we created for 30 days. Feel free to explore the app. "
+                    android:textColor="@color/white_color" />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:text="Email id"
+                    android:textColor="@color/white_color"
+                    android:textSize="@dimen/text_size16" />
+
+                <EditText
+                    android:id="@+id/emailid_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_marginTop="@dimen/margin_2"
+                    android:background="@drawable/white_background"
+                    android:hint="Enter email id"
+                    android:inputType="text"
+                    android:padding="@dimen/padding_8"
+                    android:singleLine="true"
+                    android:textColor="@color/black_color" />
+
+
+
+                <TextView
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:text="First name"
+                    android:textColor="@color/white_color"
+                    android:textSize="@dimen/text_size16" />
+
+                <EditText
+                    android:id="@+id/first_name_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_marginTop="@dimen/margin_2"
+                    android:background="@drawable/white_background"
+                    android:hint="Enter  first name"
+                    android:inputType="text"
+                    android:padding="@dimen/padding_8"
+                    android:singleLine="true"
+                    android:textColor="@color/black_color" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_10"
+                android:text="Last name"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/text_size16" />
+
+            <EditText
+                android:id="@+id/last_name_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_marginTop="@dimen/margin_2"
+                android:background="@drawable/white_background"
+                android:hint="Enter last name"
+                android:inputType="text"
+                android:padding="@dimen/padding_8"
+                android:singleLine="true"
+                android:textColor="@color/black_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:orientation="vertical" >
+
+
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:text="Select sport type"
+                    android:textColor="@color/white_color"
+                    android:textSize="@dimen/text_size16" />
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_2"
+                    android:background="@drawable/edittext_background"
+                    android:weightSum="5" >
+
+                    <Spinner
+
+                        android:id="@+id/soprt_type_spinner"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:layout_weight="4.5"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/sort_by"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:paddingLeft="@dimen/padding_10"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:textColor="@color/black_color"
+                        android:textColorHint="@color/gray_color"
+                        android:textSize="@dimen/text_size14" />
+
+                    <ImageButton
+                        android:id="@+id/open_spinner_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/down_arrow" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:minEms="4"
+                    android:text="Club name"
+                    android:textColor="@color/white_color"
+                    android:textSize="@dimen/text_size16" />
+
+                <EditText
+                    android:id="@+id/club_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_marginTop="@dimen/margin_2"
+                    android:background="@drawable/white_background"
+                    android:hint="Enter club name"
+                    android:inputType="textEmailAddress"
+                    android:padding="@dimen/padding_8"
+                    android:singleLine="true"
+                    android:textColor="@color/black_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:minEms="4"
+                    android:text="Club website"
+                    android:textColor="@color/white_color"
+                    android:textSize="@dimen/text_size16" />
+
+                <EditText
+                    android:id="@+id/club_website_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_marginTop="@dimen/margin_2"
+                    android:background="@drawable/white_background"
+                    android:hint="Enter club website"
+                    android:inputType="textEmailAddress"
+                    android:padding="@dimen/padding_8"
+                    android:singleLine="true"
+                    android:textColor="@color/black_color" />
+            </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:orientation="vertical" >
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_10"
+                android:text="Sport you need the app for"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/text_size16" />
+
+            <EditText
+                android:id="@+id/sports_type_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_marginTop="@dimen/margin_2"
+                android:background="@drawable/white_background"
+                android:hint="Enter sport you need the app for"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/padding_8"
+                android:singleLine="true"
+                android:textColor="@color/black_color" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:orientation="horizontal"
+                android:weightSum="10" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_weight="4.5"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/padding_3"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:text="Country code"
+                        android:textColor="@color/white_color"
+                        android:textSize="@dimen/text_size18" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <Spinner
+                            android:paddingRight="@dimen/padding_5"
+                            android:paddingLeft="@dimen/padding_5"
+                            android:background="@drawable/white_background"
+                            android:id="@+id/country_code_spiner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/padding_3"
+                          />
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/margin_5"
+                            android:background="@drawable/down_arrow" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/padding_3"
+                        android:text="Contact number"
+                        android:textColor="@color/white_color"
+                        android:textSize="@dimen/text_size18" />
+
+                    <EditText
+                        android:id="@+id/contact_number_edit_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/white_background"
+                        android:hint="Contact number"
+                        android:inputType="number"
+                        android:maxLength="12"
+                        android:padding="@dimen/padding_8"
+                        android:singleLine="true"
+                        android:textSize="@dimen/text_size14" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_10"
+                android:text="Message"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/text_size18" />
+
+            <EditText
+                android:id="@+id/message_edit_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_marginTop="@dimen/margin_2"
+                android:background="@drawable/white_background"
+                android:gravity="top|left"
+                android:hint="Enter message"
+                android:minLines="5"
+                android:padding="@dimen/padding_8"
+                android:textColor="@color/black_color" />
+
+            <ImageButton
+                android:id="@+id/ok_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_15"
+                android:background="@drawable/okbutton" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

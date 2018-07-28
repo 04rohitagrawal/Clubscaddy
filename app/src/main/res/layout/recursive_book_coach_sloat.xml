@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+
+    android:background="@color/white_color"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/court_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/blue_header"
+        android:clickable="false"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/padding_10"
+        android:text="Reservation Details"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/text_size16" />
+
+
+
+    <LinearLayout
+        android:paddingLeft="@dimen/margin_15"
+
+        android:paddingRight="@dimen/margin_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_5"
+
+        android:orientation="vertical" >
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/enter_member_name_lable_tv"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reservation For  "
+            android:textColor="@color/black_color" />
+
+
+
+
+
+
+
+
+
+
+
+        <com.clubscaddy.custumview.InstantAutoComplete
+            android:id="@+id/member_auto_completetv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/whitecolor_background"
+            android:hint="Select member"
+            android:textColorHint="@color/gray_color"
+            android:padding="@dimen/padding_8"
+            android:singleLine="true"
+            android:completionThreshold="1"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/text_size16" >
+
+
+        </com.clubscaddy.custumview.InstantAutoComplete>
+
+
+        <TextView
+            android:visibility="gone"
+
+            android:layout_margin="@dimen/margin_5"
+            android:textSize="@dimen/text_size14"
+            android:text="Note :- Leave the above filed empty if you are trying to block time slots from getting reserved "
+            android:textColor="@color/gray_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/error_msg_tv"
+            android:layout_margin="@dimen/margin_5"
+            android:textSize="@dimen/text_size16"
+            android:textColor="@color/red"
+            android:text="This member does not exits,please choose a name from the list."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+
+
+            android:text="Reservation Duration  "
+            android:textColor="@color/black_color" />
+
+
+
+        <RelativeLayout
+
+            android:layout_marginTop="@dimen/margin_5"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:padding="@dimen/padding_8"
+            android:background="@drawable/whitecolor_background"
+
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <Spinner
+                android:overlapAnchor="false"
+
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:background="@android:color/transparent"
+
+                />
+            <ImageButton
+                android:layout_centerVertical="true"
+                android:id="@+id/open_spinner_btn"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/margin_5"
+                android:background="@drawable/down_arrow"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                />
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_color"
+        android:orientation="horizontal"
+        >
+
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/blue_header"
+            android:gravity="center"
+            android:padding="@dimen/padding_10"
+            android:text="@string/cancel"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size16" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@color/white_color" />
+
+        <TextView
+            android:id="@+id/ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/blue_header"
+            android:gravity="center"
+            android:padding="@dimen/padding_10"
+            android:text="@string/done"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size16" />
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>
+
+
+</LinearLayout>

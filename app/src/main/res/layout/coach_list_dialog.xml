@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue_header"
+            android:orientation="vertical" >
+
+
+
+            <TextView
+                android:padding="@dimen/padding_12"
+                android:textSize="@dimen/text_size16"
+                android:text="Select Coach"
+                android:id="@+id/actionbar_titletext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white_color" />
+
+
+        </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ListView
+        android:divider="@color/divider_line_color"
+        android:dividerHeight="@dimen/margin_1"
+        android:id="@+id/coach_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+        <TextView
+            android:id="@+id/error_mg_tv"
+            android:visibility="gone"
+            android:textSize="@dimen/text_size16"
+            android:textColor="@color/gray_color"
+            android:text="No Coaches in club"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+
+
+    </RelativeLayout>
+</LinearLayout>

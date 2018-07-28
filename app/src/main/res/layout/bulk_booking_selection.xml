@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="40dp"
+            android:background="@color/light_gray_color" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/light_gray_color"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/blue_header"
+                    android:padding="5dp" >
+
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white_color"
+                        android:drawableRight="@drawable/calendar_icon"
+                        android:gravity="center"
+                        android:padding="@dimen/padding_10"
+                        android:text="@string/date"
+                        android:textColor="@color/black_color" />
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/date_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:divider="@null"
+                    android:dividerHeight="5dp"
+                    android:visibility="gone" >
+                </ListView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/blue_header"
+                    android:padding="5dp" >
+
+                    <TextView
+                        android:id="@+id/court"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white_color"
+                        android:drawableRight="@drawable/court_icon"
+                        android:gravity="center"
+                        android:padding="@dimen/padding_10"
+                        android:text="@string/court"
+                        android:textColor="@color/black_color" />
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/court_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:divider="@null"
+                    android:dividerHeight="5dp"
+                    android:visibility="gone" >
+                </ListView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/blue_header"
+                    android:padding="5dp" >
+
+                    <TextView
+                        android:id="@+id/slot"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white_color"
+                        android:drawableRight="@drawable/slot_icon"
+                        android:gravity="center"
+                        android:padding="@dimen/padding_10"
+                        android:text="@string/slot"
+                        android:textColor="@color/black_color" />
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/slot_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:divider="@null"
+                    android:dividerHeight="5dp"
+                    android:visibility="gone" >
+                </ListView>
+            </LinearLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/verify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/blue_header"
+            android:gravity="center"
+            android:padding="@dimen/padding_10"
+            android:text="Verify"
+            android:textColor="@color/white_color" />
+    </RelativeLayout>
+
+</LinearLayout>

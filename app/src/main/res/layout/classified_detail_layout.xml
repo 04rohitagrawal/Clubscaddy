@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/product_image_view"
+                android:layout_width="@dimen/profile_image_size"
+                android:layout_height="@dimen/profile_image_size"
+                android:layout_gravity="center_horizontal"
+
+                android:layout_margin="@dimen/margin_5"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/padding_5"
+                android:paddingLeft="@dimen/margin_5"
+                android:paddingRight="@dimen/margin_5"
+                android:paddingTop="@dimen/margin_20">
+
+                <com.clubscaddy.custumview.HorizontalListView
+
+                    android:id="@+id/image_gallry"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/galary_thump_image_width"></com.clubscaddy.custumview.HorizontalListView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/classfieb_title_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Title"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/text_size18"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/producr_price_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="$10"
+                        android:textColor="@color/blue_header"
+                        android:textSize="@dimen/text_size18"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_15"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Expiry Date:"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/text_size16" />
+
+
+                    <TextView
+                        android:id="@+id/product_selling_date_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10 july 2017"
+                        android:textColor="@color/blue_header"
+                        android:textSize="@dimen/text_size16" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:text="Description:"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/text_size20" />
+
+
+                <TextView
+                    android:id="@+id/product_discription_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_2"
+                    android:text="fsdyufn fsfdssfsdyfdsyif sdfsd fydsfuysd fsdfsdiufysd fsdfsdi sdf isdyfisdfyisdf sdfsdydsfi sdyfisd"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/text_size12" />
+
+                <LinearLayout
+                    android:id="@+id/classified_modify_linear_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/margin_5"
+                    android:layout_marginTop="@dimen/margin_15">
+
+
+                    <TextView
+                        android:id="@+id/edit_btn_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/green_selection_color"
+                        android:paddingBottom="@dimen/padding_10"
+                        android:paddingLeft="@dimen/margin_30"
+                        android:paddingRight="@dimen/margin_30"
+                        android:paddingTop="@dimen/padding_10"
+                        android:text="  Edit  "
+                        android:textColor="@color/white_color" />
+
+
+                    <TextView
+                        android:id="@+id/delete_btn_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:background="@color/red"
+                        android:paddingBottom="@dimen/padding_10"
+                        android:paddingLeft="@dimen/margin_30"
+                        android:paddingRight="@dimen/margin_30"
+                        android:paddingTop="@dimen/padding_10"
+                        android:text="Delete"
+                        android:textColor="@color/white_color" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_20"
+                android:text="Contact Info"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/text_size20"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_10"
+                android:text="Person Name:"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/text_size16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/classified_user_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_1"
+                android:text="Shashi Kamath"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/text_size16"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_15"
+                android:text="Address:"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/text_size16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/classified_user_address_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_1"
+                android:text="Current addtrrs dfgklfd djdf dfgdg dgdgjdf gdfjg kdgkld"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/text_size16" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_15"
+                android:text="Phone No:"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/text_size16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/classified_user_phone_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_1"
+                android:text="9993445687"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/text_size16" />
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_15"
+                android:text="Email address:"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/text_size16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/classified_user_email_tv"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_1"
+                android:text="15rohitagrawal@gmail.com"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/text_size16" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

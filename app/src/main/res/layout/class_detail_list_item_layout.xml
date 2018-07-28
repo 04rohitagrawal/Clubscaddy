@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:paddingTop="@dimen/padding_8"
+    android:paddingBottom="@dimen/padding_8"
+
+    android:background="@color/white_color"
+
+    android:weightSum="4"
+
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal" android:layout_width="match_parent"
+           android:id="@+id/topPanel"
+        android:weightSum="4"
+
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:textColor="@color/black_color"
+        android:textSize="@dimen/text_size14"
+        android:text="Tue-12 Dec"
+        android:gravity="center"
+        android:id="@+id/date_tv"
+        android:layout_weight="1.5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+
+
+    <TextView
+        android:id="@+id/time_duration_tv"
+
+        android:textColor="@color/black_color"
+        android:textSize="@dimen/text_size14"
+        android:text="12:00 PM to 02:00 PM"
+        android:gravity="center"
+        android:layout_weight="1.5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/delet_btn"
+            android:background="@drawable/delete_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+    </RelativeLayout>

@@ -1,0 +1,421 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+
+            layout="@layout/wizard_page_header">
+
+        </include>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_marginTop="@dimen/margin_30"
+                android:textSize="@dimen/text_size20"
+                android:textColor="@color/white_color"
+                android:layout_gravity="center_horizontal"
+                android:text="Add Profile Picture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <FrameLayout
+
+                android:layout_margin="@dimen/margin_15"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginBottom="@dimen/margin_20"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:background="@drawable/white_circle_img_back"
+                    android:orientation="vertical"
+                    android:padding="@dimen/margin_1">
+
+                    <ImageView
+
+                        android:id="@+id/profile_pic_imageview"
+                        android:layout_width="@dimen/wizard_profile_image_size"
+                        android:layout_height="@dimen/wizard_profile_image_size"
+                        android:background="@drawable/default_img_profile"
+                        android:scaleType="fitXY"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+
+
+
+            </FrameLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <RelativeLayout
+                    android:id="@+id/first_image_layout"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp" >
+
+                    <ImageView
+
+                        android:id="@+id/profile_image_view_one"
+                        android:layout_margin="@dimen/margin_10"
+                        android:background="@drawable/profile_wized_image_back"
+                        android:visibility="visible"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <ImageView
+                        android:id="@+id/add_profile_image_btn_one"
+                        android:background="@drawable/add_pics"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+
+                    <ImageView
+                        android:visibility="invisible"
+                        android:id="@+id/delete_profile_image_btn_one"
+                        android:layout_marginBottom="@dimen/margin_10"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/cross_pic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                    </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/second_image_layout"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp" >
+
+                    <ImageView
+
+                        android:id="@+id/profile_image_view_two"
+                        android:layout_margin="@dimen/margin_10"
+                        android:background="@drawable/profile_wized_image_back"
+                        android:visibility="visible"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <ImageView
+                        android:id="@+id/add_profile_image_btn_two"
+                        android:background="@drawable/add_pics"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+
+                    <ImageView
+                        android:visibility="invisible"
+                        android:id="@+id/delete_profile_image_btn_two"
+                        android:layout_marginBottom="@dimen/margin_10"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/cross_pic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                </RelativeLayout>
+
+
+
+
+
+
+                <RelativeLayout
+                    android:id="@+id/third_image_layout"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp" >
+
+                    <ImageView
+                        android:id="@+id/profile_image_view_three"
+                        android:layout_margin="@dimen/margin_10"
+                        android:background="@drawable/profile_wized_image_back"
+                        android:visibility="visible"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <ImageView
+                        android:id="@+id/add_profile_image_btn_three"
+                        android:background="@drawable/add_pics"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+
+                    <ImageView
+                        android:visibility="invisible"
+                        android:id="@+id/delete_profile_image_btn_third"
+                        android:layout_marginBottom="@dimen/margin_10"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/cross_pic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                </RelativeLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/margin_10"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+
+
+                <RelativeLayout
+                    android:id="@+id/fourth_image_layout"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp" >
+
+                    <ImageView
+                        android:id="@+id/profile_image_view_fourth"
+                        android:layout_margin="@dimen/margin_10"
+                        android:background="@drawable/profile_wized_image_back"
+                        android:visibility="visible"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <ImageView
+                        android:id="@+id/add_profile_image_btn_fourth"
+                        android:background="@drawable/add_pics"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+
+                    <ImageView
+                        android:visibility="invisible"
+                        android:id="@+id/delete_profile_image_btn_fourth"
+                        android:layout_marginBottom="@dimen/margin_10"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/cross_pic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                </RelativeLayout>
+
+
+
+
+
+                <RelativeLayout
+                    android:id="@+id/fifth_image_layout"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp" >
+
+                    <ImageView
+                        android:id="@+id/profile_image_view_fifth"
+                        android:layout_margin="@dimen/margin_10"
+                        android:background="@drawable/profile_wized_image_back"
+                        android:visibility="visible"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <ImageView
+                        android:id="@+id/add_profile_image_btn_fifth"
+                        android:background="@drawable/add_pics"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+
+                    <ImageView
+                        android:visibility="invisible"
+                        android:id="@+id/delete_profile_image_btn_fifth"
+                        android:layout_marginBottom="@dimen/margin_10"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/cross_pic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                </RelativeLayout>
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:text="Note :- Press and Hold on any picture to move it main display picture"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/text_size14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+
+
+               <LinearLayout
+                   android:id="@+id/instragram_tv"
+                   android:layout_margin="@dimen/margin_20"
+                   android:gravity="center_horizontal"
+                   android:background="@drawable/white_circle_back1"
+                   android:padding="@dimen/padding_5"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <TextView
+                       android:drawablePadding="@dimen/margin_5"
+                       android:drawableLeft="@drawable/insta_icon"
+                       android:textStyle="bold"
+
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center_horizontal"
+                      android:gravity="center"
+                       android:text="Connect with instagram"
+                       android:textColor="@color/blue_header" />
+
+               </LinearLayout>
+
+
+
+
+
+               <LinearLayout
+                   android:layout_margin="@dimen/margin_20"
+                   android:id="@+id/instraram_image_layout"
+                   android:visibility="gone"
+
+                   android:orientation="vertical"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+
+
+                   <TextView
+                       android:textStyle="bold"
+                       android:text="Instagram Pictures"
+                       android:textColor="@color/white_color"
+                       android:textSize="@dimen/text_size18"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" />
+
+                   <com.clubscaddy.custumview.HorizontalListView
+                       android:id="@+id/istragram_image_list_view"
+                       android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/margin_10"
+                       android:layout_height="100dp">
+
+                   </com.clubscaddy.custumview.HorizontalListView>
+
+               </LinearLayout>
+
+
+
+
+           </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/continue_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/margin_20"
+                android:background="@drawable/white_circle_back1"
+                android:gravity="center"
+                android:padding="@dimen/padding_12"
+                android:text="Continue"
+                android:textColor="@color/black_color" />
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

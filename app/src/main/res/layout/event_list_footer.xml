@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/get_more_event_btn"
+        android:padding="@dimen/margin_10"
+        android:text="See More"
+        android:drawableBottom="@drawable/down_arrow"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:textSize="@dimen/text_size18"
+        android:drawablePadding="@dimen/margin_5"
+        android:textColor="@color/black_color"
+        android:background="@color/white_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

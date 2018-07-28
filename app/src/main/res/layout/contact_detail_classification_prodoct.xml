@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:rsb="http://schemas.android.com/apk/res-auto"
+    android:background="#546A9B"
+
+
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size16"
+            android:padding="@dimen/padding_10"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Contact Details"
+            android:textColor="@color/black_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/check_box_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ids"
+        android:layout_marginRight="@dimen/margin_20"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginTop="@dimen/margin_20"
+        android:orientation="vertical"
+       >
+
+        <CheckBox
+
+            android:id="@+id/show_profile_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@drawable/radio_btn_selector"
+            android:checked="false"
+            android:text=" Make my contact details visible"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size18" />
+
+
+        <CheckBox
+            android:layout_marginTop="@dimen/margin_10"
+            android:id="@+id/manual_fill_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@drawable/radio_btn_selector"
+            android:checked="true"
+            android:text=" Fill manual"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size18" />
+
+    </LinearLayout>
+
+
+    <TextView
+
+          android:id="@+id/email_tv"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:text="Email Id"
+        android:textSize="@dimen/text_size14"
+        android:textColor="@color/white_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+    <EditText
+        android:singleLine="true"
+        android:layout_marginTop="@dimen/margin_5"
+        android:id="@+id/email_edit_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:background="@color/white_color"
+        android:hint="Enter email id"
+        android:padding="@dimen/padding_8" />
+
+
+
+
+
+
+
+
+
+
+
+
+    <TextView
+
+        android:id="@+id/phone_tv"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:text="Phone No"
+        android:textSize="@dimen/text_size14"
+        android:textColor="@color/white_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+    <EditText
+        android:inputType="phone"
+        android:layout_marginTop="@dimen/margin_5"
+        android:id="@+id/mobile_edit_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:background="@color/white_color"
+        android:hint="Enter Phone No"
+        android:padding="@dimen/padding_8" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_20"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/blue_header"
+            android:gravity="center"
+            android:padding="@dimen/padding_10"
+            android:text="@string/cancel"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size16" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@color/white_color" />
+
+        <TextView
+            android:id="@+id/ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/blue_header"
+            android:gravity="center"
+            android:padding="@dimen/padding_10"
+            android:text="@string/done"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size16" />
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
+
+
+
+

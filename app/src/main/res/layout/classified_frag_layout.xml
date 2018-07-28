@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/no_data_tv"
+        android:textSize="@dimen/text_size18"
+        android:textColor="@color/white_color"
+        android:text="No data found"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/tab_layout"
+        android:visibility="visible"
+
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        >
+        <LinearLayout
+            android:padding="@dimen/margin_15"
+
+            android:background="@drawable/active_tb_bg"
+
+            android:id="@+id/classified_list_tab"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:textSize="@dimen/text_size14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/white_color"
+
+                android:text="All Classifieds"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:padding="@dimen/margin_15"
+
+            android:background="@color/unselected_tab"
+
+            android:id="@+id/my_classified_list_tab"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+            <TextView
+                android:textSize="@dimen/text_size14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/white_color"
+
+                android:text="My Classifieds"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/add_btn"
+        android:background="@drawable/add_btn"
+        android:layout_marginBottom="@dimen/margin_20"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:dividerHeight="1dp"
+
+        android:divider="@color/gray_color"
+        android:layout_above="@id/add_btn"
+        android:layout_below="@id/tab_layout"
+        android:id="@+id/classified_item_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+
+
+    <ProgressBar
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+
+</RelativeLayout>

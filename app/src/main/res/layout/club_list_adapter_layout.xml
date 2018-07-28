@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="@dimen/padding_5"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/white_color"
+    >
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/user_logo_iv"
+            android:layout_width="@dimen/member_profile_size"
+            android:layout_height="@dimen/member_profile_size"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/margin_10"
+            android:src="@drawable/default_club_profile"
+            android:visibility="visible" />
+
+
+        <ProgressBar
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/loader_progrss_bar"
+            android:layout_width="@dimen/cross_image_sze"
+            android:layout_height="@dimen/cross_image_sze" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size14"
+        android:id="@+id/club_name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_color"
+        android:gravity="center_vertical"
+         android:textColor="@color/black_color"
+        android:singleLine="true"
+        android:text="sdf fds dsfsod asdf" />
+
+
+        <TextView
+            android:textColor="@color/black_color"
+            android:layout_marginTop="@dimen/margin_5"
+            android:id="@+id/club_status_msg_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_color"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/text_size14"
+            android:singleLine="true"
+            android:text="Hello" />
+
+
+    </LinearLayout>
+</LinearLayout>

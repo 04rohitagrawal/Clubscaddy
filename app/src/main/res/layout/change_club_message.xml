@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_20" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:textColor="@color/white_color"
+                android:text="0/180"
+                android:textSize="@dimen/text_size18"
+                android:layout_margin="@dimen/margin_10"
+                android:layout_gravity="right"
+                android:id="@+id/club_msg_status_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+   
+    <EditText
+        android:maxLength="180"
+         android:focusable="true"
+   android:focusableInTouchMode ="true"
+        android:id="@+id/club_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10"
+        android:hint="club message"
+        android:imeOptions="actionNext"
+        android:inputType="textMultiLine"
+        android:background="@drawable/whitecolor_background"
+        android:scrollHorizontally="true"
+        android:minLines="10"
+        android:lines="9"
+        android:gravity="left|top"
+        android:padding="@dimen/text_size10"
+        android:textColor="@color/black_color"
+        android:textColorHint="@color/gray_color"
+        android:textSize="@dimen/text_size14" />
+
+    <Button
+        android:id="@+id/done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_20"
+        android:background="@drawable/okbutton"
+        android:gravity="center"
+        android:src="@drawable/okbutton"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/text_size18" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

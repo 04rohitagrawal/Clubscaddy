@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_5">
+
+
+    <ImageView
+
+        android:id="@+id/delete_member"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/cancel_icon" />
+
+
+     <RelativeLayout
+         android:id="@+id/image_layout"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content">
+
+         <ImageView
+             android:id="@+id/commentor_image"
+             android:layout_width="@dimen/member_profile_size"
+             android:layout_height="@dimen/member_profile_size"
+             android:background="@drawable/default_img_profile"
+             android:scaleType="fitXY" />
+
+         <ProgressBar
+             android:visibility="gone"
+             android:id="@+id/image_loader_progressbar"
+             android:layout_centerHorizontal="true"
+             android:layout_centerVertical="true"
+             android:layout_width="@dimen/cross_image_sze"
+             android:layout_height="@dimen/cross_image_sze"
+             android:layout_gravity="center" />
+
+     </RelativeLayout>
+
+
+
+
+
+    <TextView
+        android:id="@+id/commant_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="8:42 AM, mm-dd-yyyy"
+        android:textColor="@color/comment_all_text_color"
+        android:textSize="@dimen/text_size12" />
+
+
+    <LinearLayout
+        android:id="@+id/single_comment_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/delete_member"
+        android:layout_toRightOf="@id/image_layout"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_5">
+
+
+        <LinearLayout
+            android:id="@+id/user_name_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/margin_5"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/commentor_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:singleLine="true"
+
+                android:textColor="#787878"
+                android:textSize="@dimen/text_size12" />
+
+            <TextView
+                android:id="@+id/comment_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_5"
+                android:gravity="center"
+
+                android:textColor="@color/comment_all_text_color"
+                android:textSize="@dimen/text_size12" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

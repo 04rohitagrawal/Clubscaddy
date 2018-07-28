@@ -1,0 +1,57 @@
+<resources>
+
+    <!--
+         Customize dimensions originally defined in res/values/dimens.xml (such as
+         screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
+    -->
+    <dimen name="activity_horizontal_margin">128dp</dimen>
+
+    
+  
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="margin_1">1dp</dimen>
+    <dimen name="margin_2">2dp</dimen>
+    <dimen name="margin_5">5dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_15">15dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="margin_30">30dp</dimen>
+     <dimen name="margin_40">40dp</dimen>
+     <dimen name="margin_43">43dp</dimen>
+    <dimen name="edittext_200">200dp</dimen>
+    <dimen name="edittext_35">40dp</dimen>
+    <dimen name="edittext_32">32dp</dimen>
+    <dimen name="padding_5">5dp</dimen>
+    <dimen name="padding_10">10dp</dimen>
+    <dimen name="padding_8">8dp</dimen>
+    <dimen name="padding_3">3dp</dimen>
+    <dimen name="text_size10">10sp</dimen>
+    <dimen name="text_size12">12sp</dimen>
+    <dimen name="text_size08">12sp</dimen>
+    <dimen name="text_size14">18sp</dimen>
+    <dimen name="text_size16">16sp</dimen>
+    <dimen name="text_size18">18sp</dimen>
+    <dimen name="text_size20">20sp</dimen>
+    
+    <dimen name="text_size05">10sp</dimen>
+<dimen name="padding_12">12dp</dimen>
+
+
+<dimen name="galary_thump_image_width">180dp</dimen>
+<dimen name="galary_thump_image_height">180dp</dimen>
+<dimen name="show_reservation_bottom_layout_width">80dp</dimen>
+<dimen name="delete_btn_padding">8dp</dimen>
+<dimen name="my_reservation_item_size">100dp</dimen>
+<dimen name="member_count_circle">40dp</dimen>
+
+
+<dimen name="add_btn_size">100dp</dimen>
+<dimen name="cross_image_sze">50dp</dimen>
+<dimen name="member_profile_size">160dp</dimen>
+<dimen name="edit_profile_size">200dp</dimen>
+<dimen name="edit_btn_size">80dp</dimen>
+<dimen name="dash_board_image_size">100dp</dimen>
+<dimen name="profile_image_size">250dp</dimen>
+<dimen name="notification_bar_size">40dp</dimen>
+<dimen name="resrevation_cancel_image">40dp</dimen>
+</resources>

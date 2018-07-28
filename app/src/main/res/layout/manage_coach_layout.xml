@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    android:baselineAligned="false">
+
+
+    <TextView
+        android:textSize="@dimen/text_size18"
+        android:layout_marginLeft="@dimen/margin_15"
+        android:layout_marginTop="@dimen/margin_10"
+        android:textColor="@color/white_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add coach"
+        />
+    <AutoCompleteTextView
+        android:layout_marginTop="@dimen/margin_5"
+        android:imeOptions="actionDone"
+        android:id="@+id/search_coach_auto_complate_textview"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:padding="@dimen/padding_10"
+        android:singleLine="true"
+        android:background="@drawable/white_background"
+        android:hint="Type new coach name here"
+        android:completionThreshold="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+    <ListView
+        android:layout_marginTop="@dimen/margin_10"
+        android:dividerHeight=".5dp"
+        android:divider="@color/gray_color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/club_coach_list_view"
+        ></ListView>
+
+</LinearLayout>

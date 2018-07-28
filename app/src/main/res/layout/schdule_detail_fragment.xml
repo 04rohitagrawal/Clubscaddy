@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/league_title_tv"
+                android:layout_margin="@dimen/margin_10"
+                android:textStyle="bold"
+                android:textColor="@color/white_color"
+                android:text="fsdafsdjk"
+                android:textSize="@dimen/text_size20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <ListView
+
+                android:background="@color/white_color"
+                android:dividerHeight="0.5dp"
+                android:divider="@color/dark_gray"
+                android:id="@+id/league_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></ListView>
+
+            <LinearLayout
+                android:background="@color/blue_header"
+                android:weightSum="4"
+
+                android:gravity="center_vertical"
+                android:id="@+id/edit_mode_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+
+                <TextView
+                    android:paddingTop="@dimen/padding_8"
+                    android:paddingBottom="@dimen/padding_8"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:id="@+id/league_edit_tab"
+                    android:drawableTop="@drawable/evt_edit_icon"
+                    android:drawablePadding="@dimen/margin_10"
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:text="EDIT"
+                    android:textColor="@color/white_color"
+                    android:textSize="@dimen/text_size10" />
+
+                <View
+                    android:layout_width="0.4dp"
+                    android:layout_height="fill_parent"
+                    android:background="#800000ff" />
+
+
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/evt_delete_icon"
+                    android:drawablePadding="@dimen/margin_10"
+                    android:id="@+id/league_delete_tab"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="DELETE"
+                    android:textColor="@color/white_color"
+                    android:textSize="@dimen/text_size10" />
+
+
+
+
+                <View
+                    android:layout_width="0.4dp"
+                    android:layout_height="fill_parent"
+                    android:background="#800000ff" />
+
+
+
+
+
+
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/send_notify"
+                    android:drawablePadding="@dimen/margin_10"
+                    android:id="@+id/league_message_tab"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:text="MESSAGE"
+                    android:textColor="@color/white_color"
+                    android:textSize="@dimen/text_size10" />
+
+
+
+
+
+                <View
+                    android:layout_width="0.4dp"
+                    android:layout_height="match_parent"
+                    android:background="#800000ff" />
+
+
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/evt_add_member_icon"
+                    android:drawablePadding="@dimen/margin_10"
+                    android:id="@+id/add_new_member_tab"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:text="Add Participant"
+                    android:textColor="@color/white_color"
+                    android:textSize="@dimen/text_size10" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:background="@color/white_color"
+                android:textSize="@dimen/text_size20"
+                android:padding="@dimen/margin_10"
+                android:textColor="@color/dark_gray"
+                android:text="@string/Participants"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/league_participant_list_view"
+                android:layout_width="match_parent"
+                android:background="@color/white_color"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+
+
+
+
+
+
+</LinearLayout>

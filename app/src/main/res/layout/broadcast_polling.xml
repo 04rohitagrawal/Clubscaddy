@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+
+        android:id="@+id/left_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" >
+
+        <ImageButton
+            android:id="@+id/add_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/margin_10"
+            android:background="@drawable/add_btn" />
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/add_btn"
+            android:divider="@color/gray_color"
+            android:dividerHeight=".5dp" >
+        </ListView>
+    </RelativeLayout>
+
+    <com.clubscaddy.custumview.CustomScrollView
+        android:id="@+id/create_broadcast"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RadioGroup
+                android:id="@+id/broadcast_polling_rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_marginRight="@dimen/margin_20"
+                android:layout_marginTop="@dimen/margin_20"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/broadcast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/radio_btn_selector"
+                    android:checked="false"
+                    android:text="Broadcast"
+                    android:textColor="@color/white_color"
+                    android:textSize="@dimen/text_size14" />
+
+                <RadioButton
+                    android:id="@+id/polling"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_2"
+                    android:button="@drawable/radio_btn_selector"
+                    android:checked="true"
+                    android:text="Polling"
+                    android:textColor="@color/white_color"
+                    android:textSize="@dimen/text_size14" />
+
+                <RadioButton
+                    android:id="@+id/send_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_2"
+                    android:button="@drawable/radio_btn_selector"
+                    android:checked="true"
+                    android:text="Send Mail"
+                    android:textColor="@color/white_color"
+                    android:textSize="@dimen/text_size14" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/polling_heading_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_10"
+                android:layout_marginRight="@dimen/padding_10"
+                android:layout_marginTop="@dimen/margin_5"
+                android:text="Please type a message that needs to broadcasted among your group"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/text_size18" />
+
+            <TextView
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/margin_20"
+                android:layout_marginBottom="@dimen/margin_2"
+                android:layout_marginTop="@dimen/margin_10"
+                android:id="@+id/discription_textview_status"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0/1000"
+                android:textColor="@color/white_color" />
+
+            <EditText
+                android:maxLines="8"
+                android:maxLength="1000"
+                android:id="@+id/msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:background="@drawable/white_circle_back1"
+                android:gravity="top|left"
+                android:hint="Message"
+                android:minLines="5"
+                android:padding="@dimen/padding_10"
+                android:textColor="@color/black_color" />
+
+            <RadioGroup
+                android:layout_marginTop="@dimen/margin_10"
+                android:id="@+id/send_to_rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_20"
+                android:layout_marginRight="@dimen/margin_20"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/radio_btn_selector"
+                    android:checked="true"
+                    android:text="All"
+                    android:textColor="@color/white_color" />
+
+                <RadioButton
+                    android:id="@+id/group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_20"
+                    android:button="@drawable/radio_btn_selector"
+                    android:text="Groups"
+                    android:textColor="@color/white_color" />
+            </RadioGroup>
+
+            <RelativeLayout
+                android:id="@+id/spinner_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/select_group_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_20"
+                    android:text="Select Group"
+                    android:textColor="@color/white_color" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/select_group_title"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:background="@drawable/edittext_background"
+                    android:paddingLeft="@dimen/padding_3"
+                    android:paddingRight="@dimen/padding_5" >
+
+                    <Spinner
+                        android:id="@+id/select_group_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_5"
+                        android:layout_marginRight="@dimen/margin_5"
+                        android:layout_marginTop="@dimen/padding_3"
+                        android:background="@android:color/transparent"
+                        android:paddingBottom="@dimen/padding_3"
+                        android:paddingLeft="@dimen/padding_5"
+                        android:paddingRight="@dimen/padding_5" />
+
+                    <ImageButton
+                        android:visibility="gone"
+                        android:id="@+id/open_spinner_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin_5"
+                        android:background="@drawable/down_arrow" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/add_group_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10"
+                android:background="@drawable/edittext_background"
+                android:gravity="center"
+                android:text="Add Group"
+                android:textColor="@color/black_color"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/margin_20"
+                android:background="@null"
+                android:src="@drawable/okbutton" />
+        </LinearLayout>
+    </com.clubscaddy.custumview.CustomScrollView>
+
+</LinearLayout>

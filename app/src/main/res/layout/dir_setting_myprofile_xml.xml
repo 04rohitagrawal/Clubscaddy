@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        
+        android:layout_marginTop="@dimen/margin_10"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/change_password_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/whitecolor_background"
+            android:drawableRight="@drawable/next_arrow"
+            android:padding="@dimen/padding_10"
+            android:text="@string/change_password"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/text_size14" />
+<View 
+    android:background="@color/gray_color"
+    android:layout_width="match_parent"
+    android:layout_height=".5dp"
+    />
+        <TextView
+            android:id="@+id/privacy_option_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+           
+            android:background="@drawable/whitecolor_background"
+            android:drawableRight="@drawable/next_arrow"
+            android:padding="@dimen/padding_10"
+            android:text="@string/privacy_option"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/text_size14" />
+<View 
+    android:background="@color/gray_color"
+    android:layout_width="match_parent"
+    android:layout_height=".5dp"
+    />
+        <TextView
+            android:id="@+id/contact_support"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+           
+            android:background="@drawable/whitecolor_background"
+            android:drawableRight="@drawable/next_arrow"
+            android:padding="@dimen/padding_10"
+            android:text="@string/contact_support"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/text_size14" />
+        <View 
+    android:background="@color/gray_color"
+    android:layout_width="match_parent"
+    android:layout_height=".5dp"
+    />
+        <TextView
+            android:id="@+id/manage_club_logo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+     
+            android:background="@drawable/whitecolor_background"
+            android:drawableRight="@drawable/next_arrow"
+            android:padding="@dimen/padding_10"
+            android:text="@string/manage_club_logo_icon"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/text_size14" />
+
+<View 
+    android:background="@color/gray_color"
+    android:layout_width="match_parent"
+    android:layout_height=".5dp"
+    />
+        <TextView
+            android:id="@+id/change_club_message"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+           
+            android:background="@drawable/whitecolor_background"
+            android:drawableRight="@drawable/next_arrow"
+            android:padding="@dimen/padding_10"
+            android:text="@string/change_club_message"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/text_size14" />
+<View 
+    android:background="@color/gray_color"
+    android:layout_width="match_parent"
+    android:layout_height=".5dp"
+    />
+
+
+        <TextView
+            android:id="@+id/manage_admin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            
+            android:background="@drawable/whitecolor_background"
+            android:drawableRight="@drawable/next_arrow"
+            android:padding="@dimen/padding_10"
+            android:text="@string/manage_admin"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/text_size14" />
+        <View 
+    android:background="@color/gray_color"
+    android:layout_width="match_parent"
+    android:layout_height=".5dp"
+    />
+ <TextView
+            android:id="@+id/manage_support_type"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+          
+            android:background="@drawable/whitecolor_background"
+            android:drawableRight="@drawable/next_arrow"
+            android:padding="@dimen/padding_10"
+            android:text="@string/manage_support_type"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/text_size14" />
+ <View 
+    android:background="@color/gray_color"
+    android:layout_width="match_parent"
+    android:layout_height=".5dp"
+    />
+        
+    </LinearLayout>
+
+</LinearLayout>

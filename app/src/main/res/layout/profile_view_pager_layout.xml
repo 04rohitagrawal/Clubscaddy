@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+        <ImageView
+
+            android:background="@drawable/default_img_profile"
+            android:id="@+id/profile_pic_imageview"
+            android:layout_width="@dimen/profile_image_size"
+            android:layout_height="@dimen/profile_image_size"
+
+            android:scaleType="fitXY"
+            android:visibility="visible" />
+
+
+
+
+
+
+
+</LinearLayout>

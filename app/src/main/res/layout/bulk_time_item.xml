@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/court_slot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/time_tab_color"
+        android:clickable="false"
+        android:gravity="center"
+        android:padding="@dimen/padding_5"
+        android:text="@string/select_all"
+        android:textColor="@color/blue_header"
+        android:textSize="@dimen/text_size16" />
+
+</LinearLayout>

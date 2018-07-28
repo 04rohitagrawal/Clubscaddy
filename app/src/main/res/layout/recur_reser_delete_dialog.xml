@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_circle_back"
+    android:paddingTop="@dimen/padding_10"
+    android:paddingBottom="@dimen/padding_10"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="@dimen/padding_5"
+        android:paddingTop="@dimen/padding_5"
+
+        android:text="Clubs Caddy"
+        android:textColor="@color/black_color"
+        android:textSize="15dp" />
+
+    <TextView
+        android:textColor="@color/black_color"
+
+        android:paddingTop="@dimen/padding_8"
+        android:paddingBottom="@dimen/padding_8"
+        android:gravity="center"
+        android:textSize="@dimen/text_size10"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This is recursive reservation"
+        />
+
+
+    <EditText
+        android:layout_marginBottom="@dimen/margin_5"
+        android:layout_marginTop="@dimen/margin_5"
+        android:textColor="@color/black_color"
+        android:gravity="top|left"
+        android:padding="@dimen/padding_5"
+        android:hint="Reason"
+        android:background="@drawable/black_border_back"
+        android:id="@+id/cancel_reason_edit_tv"
+        android:minLines="3"
+        android:maxLines="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+    <TextView
+        android:id="@+id/single_booking_delete_tv"
+        android:padding="@dimen/padding_10"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/blue_header"
+        android:text="Just delete for selected date"
+        android:textSize="@dimen/text_size16"
+        android:layout_width="wrap_content"
+        android:paddingTop="@dimen/padding_8"
+        android:paddingBottom="@dimen/padding_8"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:background="@color/green_bg_color"
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        />
+
+
+
+    <TextView
+        android:paddingTop="@dimen/padding_10"
+        android:paddingBottom="@dimen/padding_10"
+        android:id="@+id/all_booking_delete_tv"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/blue_header"
+        android:text="Delete all recursive reservations"
+        android:textSize="@dimen/text_size16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+    <View
+        android:background="@color/green_bg_color"
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        />
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/cancel_dialog_tv"
+
+        android:padding="@dimen/padding_10"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/blue_header"
+        android:text="Cancel"
+        android:textSize="@dimen/text_size16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

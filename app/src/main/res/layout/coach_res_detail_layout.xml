@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:background="@color/white_color"
+        android:layout_marginTop="@dimen/margin_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <TextView
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/coach_name_tv"
+            android:textColor="@color/black_color"
+            />
+
+
+
+        <LinearLayout
+            android:paddingTop="0.5dp"
+            android:background="@color/black_color"
+            android:layout_margin="@dimen/margin_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+
+
+                android:orientation="vertical"
+                android:id="@+id/court_booking_table_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    android:background="@color/white_color"
+                    android:layout_marginBottom="0.5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    >
+                    <View
+                        android:background="@color/black_color"
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        />
+                    <TextView
+                        android:layout_marginRight="0.5dp"
+                        android:text="Date"
+                        android:id="@+id/court_name_tv"
+                        android:padding="@dimen/padding_10"
+                        android:layout_weight="5"
+                        android:textColor="@color/blue_header"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+
+                        />
+                    <View
+                        android:background="@color/black_color"
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        />
+                    <TextView
+                        android:layout_marginLeft="@dimen/margin_5"
+                        android:textColor="@color/blue_header"
+                        android:text="Time"
+                        android:layout_marginRight="0.5dp"
+                        android:layout_marginBottom="0.5dp"
+                        android:id="@+id/court_time_tv"
+                        android:padding="@dimen/padding_10"
+
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+
+
+                        />
+
+                    <View
+                        android:background="@color/black_color"
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        />
+
+                </LinearLayout>
+
+                <ListView
+                    android:dividerHeight="0.5dp"
+                    android:divider="@color/gray_color"
+                    android:id="@+id/reservation_list_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    ></ListView>
+            </LinearLayout>
+        </LinearLayout>
+       <!-- <TextView
+            android:id="@+id/delete_btn"
+            android:paddingLeft="@dimen/margin_15"
+            android:paddingRight="@dimen/margin_15"
+            android:paddingTop="@dimen/padding_5"
+            android:paddingBottom="@dimen/padding_5"
+            android:layout_margin="@dimen/margin_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:textColor="@color/white_color"
+            android:background="@color/red"
+            />-->
+    </LinearLayout>
+</LinearLayout>

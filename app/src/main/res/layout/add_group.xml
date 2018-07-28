@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+
+    <Button
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/okbutton"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/text_size18" />
+
+
+            <LinearLayout
+                android:layout_above="@id/done"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Group Name"
+                android:textColor="@color/white_color" />
+
+            <EditText
+                android:textSize="@dimen/text_size16"
+                android:layout_marginTop="@dimen/margin_5"
+                android:hint="Enter Group Name"
+                android:id="@+id/group_name"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/edittext_35"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/edittext_background"
+                android:drawablePadding="20dp"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="@dimen/margin_20"
+                android:textColor="@color/white_edit_text_color"
+                android:textColorHint="@color/gray_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Add Member"
+                android:id="@+id/add_member_tv"
+                android:textColor="@color/white_color" />
+
+            <AutoCompleteTextView
+                android:imeOptions="actionDone"
+                android:completionThreshold="1"
+                android:layout_marginTop="@dimen/margin_5"
+                android:hint="Search"
+                android:id="@+id/serch_member"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/edittext_35"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/edittext_background"
+                android:drawablePadding="20dp"
+
+                android:inputType="textEmailAddress"
+                android:paddingLeft="@dimen/margin_20"
+                android:textColor="@color/white_edit_text_color"
+                android:textColorHint="@color/gray_color" />
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/margin_20"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <ListView
+
+                    android:id="@+id/list"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/add_group_drop_in"
+                    android:layout_below="@+id/header"
+                    android:layout_weight="1"
+                    android:divider="@null"
+                    android:dividerHeight=".5dp"
+                    android:listSelector="@color/gray_color"
+                    android:scrollbars="none"
+                    />
+
+
+            </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>
+</LinearLayout>

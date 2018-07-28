@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/load_new_progrss_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/margin_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+    <ListView
+        android:layout_above="@id/load_new_progrss_bar"
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin_5"
+        android:descendantFocusability="beforeDescendants"
+        android:divider="@null"
+        android:dividerHeight="20dp"
+
+        android:paddingTop="20dp" >
+    </ListView>
+
+</RelativeLayout>

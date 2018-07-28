@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="@dimen/margin_2"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/rating_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="By Rating"
+                    android:textColor="@color/white_color"
+                    android:textSize="@dimen/text_size16" />
+
+                <CheckBox
+                    android:id="@+id/all_rating_cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/white_checkbox_selector"
+                    android:paddingLeft="0dip"
+
+                    android:text=" All"
+
+                    android:textColor="@color/white_color" />
+
+                <CheckBox
+                    android:id="@+id/two_half__rating_cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/white_checkbox_selector"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="0dip"
+                    android:text=" 2.5"
+                    android:textColor="@color/white_color" />
+
+                <CheckBox
+                    android:id="@+id/three_rating_cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/white_checkbox_selector"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="0dip"
+
+
+                    android:text=" 3.0"
+
+                    android:textColor="@color/white_color" />
+
+                <CheckBox
+                    android:id="@+id/three_half_rating_cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/white_checkbox_selector"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="0dip"
+
+
+                    android:text=" 3.5"
+
+                    android:textColor="@color/white_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:maxLength="10"
+                    android:text="By Rating"
+                    android:textColor="@color/white_color"
+                    android:textSize="@dimen/text_size16"
+                    android:visibility="invisible" />
+
+                <CheckBox
+                    android:id="@+id/four_rating_cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/white_checkbox_selector"
+                    android:paddingLeft="0dip"
+                    android:text=" 4.0"
+                    android:textColor="@color/white_color" />
+
+                <CheckBox
+                    android:id="@+id/four_half_rating_cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/white_checkbox_selector"
+                    android:paddingLeft="0dip"
+                    android:text=" 4.5"
+                    android:textColor="@color/white_color" />
+
+                <CheckBox
+                    android:id="@+id/five_rating_cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10"
+
+                    android:button="@null"
+                    android:drawableLeft="@drawable/white_checkbox_selector"
+                    android:paddingLeft="0dip"
+                    android:text=" 5.0"
+                    android:textColor="@color/white_color" />
+
+                <CheckBox
+                    android:id="@+id/five_half_rating_cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/white_checkbox_selector"
+                    android:paddingLeft="0dip"
+                    android:text=" 5.5"
+                    android:textColor="@color/white_color" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/edit_tv_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_10"
+        android:background="@color/white_color"
+        android:padding="@dimen/padding_5">
+
+        <EditText
+            android:id="@+id/search_member"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_2"
+            android:background="@android:color/transparent"
+            android:hint="Search"
+            android:imeOptions="actionDone"
+            android:paddingBottom="@dimen/padding_3"
+            android:paddingTop="@dimen/padding_3"
+            android:singleLine="true"
+            android:textSize="@dimen/text_size14" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/searching_layout"
+        android:layout_below="@id/edit_tv_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_5"
+        android:orientation="horizontal"
+        android:weightSum="12">
+
+
+        <RelativeLayout
+            android:id="@+id/ratting_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_15"
+            android:layout_weight="6.3"
+            android:background="@drawable/white_circle_back1">
+
+            <Spinner
+
+                android:id="@+id/ratting_list_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/padding_10"></Spinner>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/send_ralative_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_weight="2">
+
+            <TextView
+                android:id="@+id/send_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_15"
+                android:background="@drawable/white_circle_back1"
+                android:gravity="center"
+                android:paddingBottom="@dimen/padding_5"
+                android:paddingTop="@dimen/padding_5"
+                android:singleLine="true"
+                android:text="Message"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/text_size12" />
+
+            <TextView
+                android:id="@+id/countr"
+                android:layout_width="@dimen/member_count_circle"
+                android:layout_height="@dimen/member_count_circle"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="top|right"
+                android:layout_marginRight="@dimen/margin_2"
+                android:background="@drawable/circle_image_back"
+                android:gravity="center"
+                android:text="30"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/text_size10" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/create_ralative_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_weight="3.5">
+
+            <TextView
+                android:id="@+id/crate_group_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_15"
+                android:background="@drawable/white_circle_back1"
+                android:gravity="center"
+                android:paddingBottom="@dimen/padding_5"
+                android:paddingTop="@dimen/padding_5"
+                android:singleLine="true"
+                android:text=" Create Group"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/text_size12" />
+
+            <TextView
+                android:id="@+id/crete_counter"
+                android:layout_width="@dimen/member_count_circle"
+                android:layout_height="@dimen/member_count_circle"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="top|right"
+                android:background="@drawable/circle_image_back"
+                android:gravity="center"
+                android:text="30"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/text_size10" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/check_layout"
+        android:layout_below="@id/searching_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_5"
+        android:layout_marginTop="@dimen/margin_10"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <CheckBox
+            android:id="@+id/all"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+
+            android:button="@null"
+            android:drawableLeft="@drawable/white_checkbox_selector"
+            android:paddingLeft="0dip"
+            android:text=" All"
+            android:textColor="@color/white_color" />
+
+        <CheckBox
+
+            android:id="@+id/male"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.3"
+            android:button="@null"
+            android:drawableLeft="@drawable/white_checkbox_selector"
+            android:paddingLeft="0dip"
+            android:text=" Male"
+            android:textColor="@color/white_color" />
+
+        <CheckBox
+
+            android:id="@+id/female"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:button="@null"
+            android:drawableLeft="@drawable/white_checkbox_selector"
+            android:paddingLeft="0dip"
+            android:text=" Female"
+            android:textColor="@color/white_color" />
+
+        <CheckBox
+            android:checked="true"
+            android:visibility="visible"
+            android:id="@+id/junior"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:button="@null"
+            android:drawableLeft="@drawable/white_checkbox_selector"
+            android:gravity="center_vertical"
+            android:paddingLeft="0dip"
+            android:text=" Select All"
+            android:textColor="@color/white_color" />
+    </LinearLayout>
+
+
+
+    <ImageButton
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_20"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/adminList_addAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/add_btn"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/text_size18" />
+
+
+    <ListView
+        android:layout_below="@id/check_layout"
+        android:layout_above="@id/adminList_addAdmin"
+
+        android:id="@+id/example_lv_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_weight="1"
+        android:divider="@color/gray_color"
+        android:dividerHeight="0.5dp"
+        android:listSelector="@null"
+        android:scrollbars="none" />
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:gravity="center_vertical"
+    android:padding="@dimen/padding_10"
+    android:background="@color/blue_header"
+    android:layout_height="wrap_content" >
+
+
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/default_img_profile"
+        android:visibility="visible" />
+
+
+    <TextView
+        android:id="@+id/admin_list_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="iou iouj"
+        android:textColor="@color/black_color"
+        android:textSize="@dimen/text_size16"
+        android:textStyle="bold" />
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <ImageButton
+
+        android:layout_gravity="right"
+        android:id="@+id/cancel_btn"
+        android:background="@drawable/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+
+
+    </LinearLayout>
+  
+
+
+
+</LinearLayout>

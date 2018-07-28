@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/margin_2"
+        android:background="@color/white_color"
+        android:paddingTop="@dimen/padding_5"
+        android:paddingBottom="1dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="2"
+    >
+    <LinearLayout
+
+        android:id="@+id/all_reservation_linear_layout"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_margin="@dimen/margin_5"
+            android:textSize="@dimen/text_size14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black_color"
+            android:id="@+id/all_reservation"
+            android:text="All reservations"
+            />
+        <View
+             android:id="@+id/all_reservation_view"
+            android:layout_marginTop="@dimen/margin_5"
+             android:background="@color/black_color"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            />
+    </LinearLayout>
+     <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/my_reservation_linear_layout"
+        >
+        <TextView
+             android:layout_margin="@dimen/margin_5"
+            android:textSize="@dimen/text_size14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black_color"
+            android:id="@+id/my_reservation"
+            android:text="My reservations"
+            />
+        <View
+            android:visibility="gone"
+            android:id="@+id/my_reservation_view"
+            android:layout_marginTop="@dimen/margin_5"
+            android:background="@color/black_color"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            />
+    </LinearLayout>
+</LinearLayout>
+    <RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/left_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical" >
+
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+             android:layout_marginBottom="@dimen/margin_10"
+            android:background="@color/white_color"
+            android:drawableRight="@drawable/calendar"
+            android:gravity="center"
+            android:padding="@dimen/padding_10"
+            android:text="Date"
+            android:textColor="@color/black_color" />
+
+
+
+        <LinearLayout
+
+            android:id="@+id/main_view"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/margin_43"
+            >
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottoms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+        <TextView
+            android:gravity="center_horizontal"
+            android:id="@+id/oldDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/booked_slot_color"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:text="@string/old_date"
+            android:textColor="@color/white_color"
+            />
+        <LinearLayout
+   android:visibility="gone"
+    android:layout_alignParentBottom="true"
+            android:id="@+id/bottom_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/show_reservation_bottom_layout_width"
+            android:background="@color/blue_header"
+            android:gravity="center"
+
+            android:orientation="horizontal"
+           >
+
+            <TextView
+
+                android:id="@+id/cancelbottom"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/blue_header"
+                android:gravity="center"
+
+                android:text="@string/cancel"
+                android:textColor="@color/white_color" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="@color/white_color" />
+
+            <TextView
+                android:id="@+id/recursive_book"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/blue_header"
+                android:gravity="center"
+
+                android:text="@string/recursive_booking"
+                android:textColor="@color/white_color" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/white_color" />
+
+            <TextView
+                android:id="@+id/okbottom"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/blue_header"
+                android:gravity="center"
+
+                android:text="@string/book"
+                android:textColor="@color/white_color" />
+        </LinearLayout>
+    </RelativeLayout>
+<RelativeLayout
+   android:visibility="gone"
+        android:id="@+id/right_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical" >
+
+    <ImageButton
+        android:id="@+id/add_reservation_btn"
+        android:layout_marginBottom="@dimen/margin_5"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/add_btn"
+        />
+
+
+      <ProgressBar
+          android:visibility="gone"
+           android:id="@+id/loader_progrss_bar"
+          android:layout_alignParentBottom="true"
+          android:layout_centerHorizontal="true"
+          android:layout_marginBottom="@dimen/margin_20"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+
+
+    <ListView
+        android:layout_marginTop="@dimen/margin_5"
+        android:dividerHeight="0.5dp"
+        android:layout_above="@id/add_reservation_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:textSize="@dimen/text_size18"
+        android:divider="@color/gray_color"
+        android:id="@+id/my_reservation_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+           />
+
+
+
+
+
+</RelativeLayout>
+</RelativeLayout>
+
+
+
+</LinearLayout>

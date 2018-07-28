@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/event_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:text="Friendly"
+            android:textColor="@color/white_color"
+            android:textSize="25dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/score_creator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text="My Name"
+                    android:textColor="@color/white_color" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/opponent_end_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text="&amp;"
+                    android:textColor="@color/white_color" />
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/patner_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text="Opponent-2"
+                    android:textColor="@color/white_color" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_background"
+                android:gravity="center" >
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/rounded_blue"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Vs"
+                    android:textColor="@color/white_color"
+                    android:textSize="25dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/opponent1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text="Opponent-1"
+                    android:textColor="@color/white_color" />
+
+                <TextView
+                    android:id="@+id/opponent_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text="&amp;"
+                    android:textColor="@color/white_color" />
+
+                <TextView
+                    android:id="@+id/opponent2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text="Opponent-2"
+                    android:textColor="@color/white_color" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/white_color" />
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+              <TextView
+               
+                
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set-1"
+                android:visibility="gone"
+                android:padding="10dp"
+                
+                android:textColor="@color/white_color" />
+            <TextView 
+    android:textStyle="bold"
+    android:gravity="center_horizontal"
+    android:textColor="@color/white_color"
+    android:textSize="@dimen/text_size18"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="SCORES"
+    />
+        </LinearLayout>
+
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:weightSum="2.5"
+            android:orientation="horizontal" >
+
+           <TextView 
+               android:layout_weight="0.3"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               />
+            
+
+            <TextView
+               
+                android:id="@+id/my_team"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Shahid &amp; Gourav"
+                android:textColor="@color/white_color" />
+
+            <View
+               
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="@color/white_color" />
+
+            <TextView
+                android:id="@+id/opponent_team"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Shahid &amp; Gourav"
+                android:textColor="@color/white_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/blue_header"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Set-1"
+                android:textColor="@color/white_color" />
+
+            <EditText
+                android:id="@+id/set1_me"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/edittext_35"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawablePadding="20dp"
+                android:editable="false"
+                android:focusable="false"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:longClickable="false"
+                android:paddingLeft="@dimen/margin_20"
+                android:paddingRight="@dimen/margin_20"
+                android:singleLine="true"
+                android:textColor="@color/white_color"
+                android:textColorHint="@color/gray_color" />
+
+            <EditText
+                android:id="@+id/set1_opposite"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/edittext_35"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawablePadding="20dp"
+                android:editable="false"
+                android:focusable="false"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:longClickable="false"
+                android:paddingLeft="@dimen/margin_20"
+                android:paddingRight="@dimen/margin_20"
+                android:singleLine="true"
+                android:textColor="@color/white_color"
+                android:textColorHint="@color/gray_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Set-2"
+                android:textColor="@color/white_color" />
+
+            <EditText
+                android:id="@+id/set2_me"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/edittext_35"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawablePadding="20dp"
+                android:editable="false"
+                android:focusable="false"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:longClickable="false"
+                android:paddingLeft="@dimen/margin_20"
+                android:paddingRight="@dimen/margin_20"
+                android:singleLine="true"
+                android:textColor="@color/white_color"
+                android:textColorHint="@color/gray_color" />
+
+            <EditText
+                android:id="@+id/set2_opposite"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/edittext_35"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawablePadding="20dp"
+                android:editable="false"
+                android:focusable="false"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:longClickable="false"
+                android:paddingLeft="@dimen/margin_20"
+                android:paddingRight="@dimen/margin_20"
+                android:singleLine="true"
+                android:textColor="@color/white_color"
+                android:textColorHint="@color/gray_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/blue_header"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Set-3"
+                android:textColor="@color/white_color" />
+
+            <EditText
+                android:id="@+id/set3_me"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/edittext_35"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawablePadding="20dp"
+                android:editable="false"
+                android:focusable="false"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:longClickable="false"
+                android:paddingLeft="@dimen/margin_20"
+                android:paddingRight="@dimen/margin_20"
+                android:singleLine="true"
+                android:textColor="@color/white_color"
+                android:textColorHint="@color/gray_color" />
+
+            <EditText
+                android:id="@+id/set3_opposite"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/edittext_35"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawablePadding="20dp"
+                android:editable="false"
+                android:focusable="false"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:longClickable="false"
+                android:paddingLeft="@dimen/margin_20"
+                android:paddingRight="@dimen/margin_20"
+                android:singleLine="true"
+                android:textColor="@color/white_color"
+                android:textColorHint="@color/gray_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/set4tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Set-4"
+                android:textColor="@color/white_color"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/set4_me"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/edittext_35"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawablePadding="20dp"
+                android:editable="false"
+                android:focusable="false"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:longClickable="false"
+                android:paddingLeft="@dimen/margin_20"
+                android:paddingRight="@dimen/margin_20"
+                android:singleLine="true"
+                android:textColor="@color/white_color"
+                android:textColorHint="@color/gray_color"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/set4_opposite"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/edittext_35"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawablePadding="20dp"
+                android:editable="false"
+                android:focusable="false"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:longClickable="false"
+                android:paddingLeft="@dimen/margin_20"
+                android:paddingRight="@dimen/margin_20"
+                android:singleLine="true"
+                android:textColor="@color/white_color"
+                android:textColorHint="@color/gray_color"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/blue_header"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/set5tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Set-5"
+                android:textColor="@color/white_color"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/set5_me"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/edittext_35"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawablePadding="20dp"
+                android:editable="false"
+                android:focusable="false"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:longClickable="false"
+                android:paddingLeft="@dimen/margin_20"
+                android:paddingRight="@dimen/margin_20"
+                android:singleLine="true"
+                android:textColor="@color/white_color"
+                android:textColorHint="@color/gray_color"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/set5_opposite"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/edittext_35"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawablePadding="20dp"
+                android:editable="false"
+                android:focusable="false"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:longClickable="false"
+                android:paddingLeft="@dimen/margin_20"
+                android:paddingRight="@dimen/margin_20"
+                android:singleLine="true"
+                android:textColor="@color/white_color"
+                android:textColorHint="@color/gray_color"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/black_color"
+            android:padding="2dp" 
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:id="@+id/accept"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Accept"
+                android:background="@color/red"
+                android:textColor="@color/white_color" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/reject"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Reject"
+                android:background="@color/green_selection_color"
+                android:textColor="@color/white_color" />
+        </LinearLayout>
+        
+        <TextView 
+            android:padding="@dimen/padding_8"
+            android:textColor="@color/white_color"
+            android:layout_margin="@dimen/margin_20"
+            android:background="@drawable/red_circle_back"
+            android:text="Delete notification"
+            android:id="@+id/delete_notification_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+</ScrollView>

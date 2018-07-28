@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_circle_back"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_10" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="@dimen/padding_3"
+        android:textColor="@color/black_color"
+        android:textSize="@dimen/text_size16" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="@dimen/padding_3"
+        android:text="Are you sure you want to delete this reservation?"
+        android:textColor="@color/black_color"
+        android:textSize="@dimen/text_size14" />
+
+    <CheckBox
+        android:gravity="center_vertical"
+        android:id="@+id/noshow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/padding_10"
+        android:text="Mark as no show"
+        android:textColor="@color/black_color"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/green_bg_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/done"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/padding_10"
+            android:text="@string/yes"
+            android:textColor="@color/blue_header" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/green_bg_color" />
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/padding_10"
+            android:text="@string/no"
+            android:textColor="@color/blue_header" />
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

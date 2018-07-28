@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_5"
+        android:background="@color/gray_color"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/do_not_send_me_notification_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/whitecolor_background"
+            android:visibility="gone"
+            android:weightSum="10" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_marginRight="10dp"
+                android:layout_weight="8"
+                android:clickable="false"
+                android:gravity="center_vertical"
+                android:minLines="2"
+                android:padding="10dp"
+                android:text="I don&apos;t want to receive notification"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size14" />
+
+            <CheckBox
+                android:id="@+id/do_not_send_me_notification_cheack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:button="@drawable/checkbox_selector"
+                android:clickable="false"
+                android:padding="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/do_not_show_my_email_profile_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop=".5dp"
+            android:background="@drawable/whitecolor_background"
+            android:weightSum="10" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:clickable="false"
+                android:minLines="2"
+                android:padding="10dp"
+                android:text="Do not show my email on my profile"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size14" />
+
+            <CheckBox
+                android:id="@+id/do_not_show_my_email_profile_cheack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:button="@drawable/checkbox_selector"
+                android:clickable="false"
+                android:padding="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/do_not_show_my_number_profile_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop=".5dp"
+            android:background="@drawable/whitecolor_background"
+            android:clickable="false"
+            android:gravity="center"
+            android:weightSum="10" >
+
+            <TextView
+                android:id="@+id/do_not_show_my_number_profile_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="8"
+                android:clickable="false"
+                android:minLines="2"
+                android:padding="10dp"
+                android:text="Do not show my phone number on my profile"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size14" />
+
+            <CheckBox
+                android:id="@+id/do_not_show_my_number_profile_cheack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:button="@drawable/checkbox_selector"
+                android:clickable="false"
+                android:padding="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/do_not_show_my_ratting_profile_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop=".5dp"
+            android:background="@drawable/whitecolor_background"
+            android:gravity="center"
+            android:weightSum="10" >
+
+            <TextView
+                android:id="@+id/do_not_show_my_ratting_profile_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="8"
+                android:clickable="false"
+                android:minLines="2"
+                android:padding="10dp"
+                android:text="Do not show my level of play on my profile"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size14" />
+
+            <CheckBox
+                android:id="@+id/do_not_show_my_ratting_profile_cheack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:button="@drawable/checkbox_selector"
+                android:clickable="false"
+                android:padding="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/do_not_show_my_win_per_profile_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/whitecolor_background"
+            android:gravity="center"
+            android:visibility="gone"
+            android:weightSum="10" >
+
+            <TextView
+                android:id="@+id/do_not_show_my_win_per_profile_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:clickable="false"
+                android:minLines="2"
+                android:padding="10dp"
+                android:text="Do not show my winning % on my profile"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size14" />
+
+            <CheckBox
+                android:id="@+id/do_not_show_my_win_per_profile_cheack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:button="@drawable/checkbox_selector"
+                android:clickable="false"
+                android:padding="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/do_not_show_my_match_result_profile_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/whitecolor_background"
+            android:gravity="center"
+            android:weightSum="10" >
+
+            <TextView
+                android:id="@+id/do_not_show_match_result_per_profile_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:clickable="false"
+                android:minLines="2"
+                android:padding="10dp"
+                android:text="Do not show my match results on my profile"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size14" />
+
+            <CheckBox
+                android:id="@+id/do_not_show_my_match_result_profile_cheack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:button="@drawable/checkbox_selector"
+                android:checked="false"
+                android:clickable="false"
+                android:padding="5dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

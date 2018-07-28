@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/padding_10"
+    android:paddingRight="@dimen/padding_10"
+    android:paddingTop="@dimen/padding_10" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_10"
+                android:text="@string/court_max_hr"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/text_size12" />
+
+            <EditText
+                android:id="@+id/court_hr_mx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_background"
+                android:drawableRight="@drawable/hrs"
+                android:editable="false"
+                android:focusable="false"
+                android:gravity="center_vertical"
+                android:hint="@string/court_max_hr"
+                android:paddingBottom="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/text_size14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_10"
+                android:text="@string/slot_duration_min"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/text_size12" />
+
+            <EditText
+                android:id="@+id/slot_duration_min"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_background"
+                android:drawableRight="@drawable/hrs"
+                android:editable="false"
+                android:focusable="false"
+                android:gravity="center_vertical"
+                android:hint="@string/slot_duration_min"
+                android:paddingBottom="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/text_size14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_10"
+                android:text="@string/advance_booking_week"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/text_size12" />
+
+            <EditText
+                android:id="@+id/advancebookingperweek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_background"
+                android:drawableRight="@drawable/week_calendar"
+                android:editable="false"
+                android:focusable="false"
+                android:gravity="center_vertical"
+                android:hint="@string/advance_booking_week"
+                android:paddingBottom="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/text_size14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_10"
+                android:text="@string/recursive_booking_month"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/text_size12" />
+
+            <EditText
+                android:id="@+id/recursivebookingpermonth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_background"
+                android:drawableRight="@drawable/month_calendar"
+                android:editable="false"
+                android:focusable="false"
+                android:gravity="center_vertical"
+                android:hint="@string/recursive_booking_month"
+                android:paddingBottom="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/text_size14" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:text="@string/start_time"
+                        android:textColor="@color/white_color"
+                        android:textSize="@dimen/text_size12" />
+
+                    <EditText
+                        android:id="@+id/start_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_background"
+                        android:drawableRight="@drawable/clock"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:gravity="center_vertical"
+                        android:hint="@string/start_time"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:textColor="@color/black_color"
+                        android:textSize="@dimen/text_size14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:text="@string/end_time"
+                        android:textColor="@color/white_color"
+                        android:textSize="@dimen/text_size12" />
+
+                    <EditText
+                        android:id="@+id/end_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_background"
+                        android:drawableRight="@drawable/clock"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:gravity="center_vertical"
+                        android:hint="@string/end_time"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:textColor="@color/black_color"
+                        android:textSize="@dimen/text_size14" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:text="@string/reservation_per_week"
+                        android:textColor="@color/white_color"
+                        android:textSize="@dimen/text_size12" />
+
+                    <EditText
+                        android:id="@+id/reservation_per_week"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_background"
+                        android:drawableRight="@drawable/down_arrow"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:gravity="center_vertical"
+                        android:hint="@string/reservation_per_week"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:textColor="@color/black_color"
+                        android:textSize="@dimen/text_size14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:text="@string/reservation_per_day"
+                        android:textColor="@color/white_color"
+                        android:textSize="@dimen/text_size12" />
+
+                    <EditText
+                        android:id="@+id/reservation_per_day"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_background"
+                        android:drawableRight="@drawable/down_arrow"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:gravity="center_vertical"
+                        android:hint="@string/reservation_per_day"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:textColor="@color/black_color"
+                        android:textSize="@dimen/text_size14" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/done"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/okbutton"
+                    android:gravity="center" />
+
+                <Button
+                    android:id="@+id/setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/setting_btn"
+                    android:gravity="center" 
+                    android:visibility="gone"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

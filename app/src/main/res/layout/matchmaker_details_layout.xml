@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:padding="@dimen/padding_10"
+    android:orientation="vertical" >
+<ScrollView
+    android:fillViewport="true"
+    android:id="@+id/scollview"
+
+      android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   
+    android:orientation="horizontal" >
+    <LinearLayout 
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+          android:padding="@dimen/margin_2"
+        android:background="@drawable/white_capsule_back"
+        >
+        
+        <TextView 
+            android:id="@+id/total_invited_tv"
+            android:textColor="@color/white_color"
+          android:singleLine="true"
+            android:gravity="center"
+            android:background="@drawable/blue_circle_back"
+          android:text="4351"
+           android:textSize="@dimen/text_size12"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            />
+         <TextView 
+             
+            android:textColor="@color/black_color"
+         android:layout_marginLeft="@dimen/margin_2"
+           android:gravity="center_vertical"
+           android:layout_marginRight="@dimen/margin_5"
+          android:text="Invited"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+      <LinearLayout 
+          android:layout_marginLeft="@dimen/margin_5"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+          android:padding="@dimen/margin_2"
+        android:background="@drawable/white_capsule_back"
+        >
+        
+        <TextView 
+            android:textColor="@color/white_color"
+           android:id="@+id/joined_tv"
+            android:gravity="center"
+            android:background="@drawable/blue_circle_back"
+          android:text="5"
+              android:textSize="@dimen/text_size12"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            />
+         <TextView 
+            android:textColor="@color/black_color"
+         android:layout_marginLeft="@dimen/margin_2"
+           android:gravity="center_vertical"
+           android:layout_marginRight="@dimen/margin_5"
+          android:text="Joined"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+      <LinearLayout 
+             android:layout_marginLeft="@dimen/margin_5"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+          android:padding="@dimen/margin_2"
+        android:background="@drawable/white_capsule_back"
+        >
+        
+        <TextView 
+            android:textColor="@color/white_color"
+             android:id="@+id/accepted_tv"
+            android:gravity="center"
+            android:background="@drawable/blue_circle_back"
+          android:text="5"
+              android:textSize="@dimen/text_size12"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            />
+         <TextView 
+            android:textColor="@color/black_color"
+         android:layout_marginLeft="@dimen/margin_2"
+           android:gravity="center_vertical"
+             android:layout_marginRight="@dimen/margin_5"
+          android:text="Accepted"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+</LinearLayout>
+
+    
+    
+    
+    
+    
+      <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   
+    android:orientation="horizontal" >
+    
+     <LinearLayout 
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+          android:padding="@dimen/margin_2"
+        android:background="@drawable/white_capsule_back"
+        >
+        
+        <TextView 
+            android:textColor="@color/white_color"
+            android:id="@+id/rejected_tv"
+            android:gravity="center"
+            android:background="@drawable/blue_circle_back"
+          android:text="5"
+              android:textSize="@dimen/text_size12"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            />
+         <TextView 
+            android:textColor="@color/black_color"
+         android:layout_marginLeft="@dimen/margin_2"
+           android:gravity="center_vertical"
+           android:layout_marginRight="@dimen/margin_10"
+          android:text="Not accepted"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+      <LinearLayout 
+          android:visibility="gone"
+          android:layout_marginLeft="@dimen/margin_5"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+          android:padding="@dimen/margin_2"
+        android:background="@drawable/white_capsule_back"
+        >
+        
+        <TextView 
+            android:textColor="@color/white_color"
+            android:id="@+id/declinedd_tv"
+            android:gravity="center"
+            android:background="@drawable/blue_circle_back"
+     
+              android:textSize="@dimen/text_size12"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            />
+         <TextView 
+            android:textColor="@color/black_color"
+         android:layout_marginLeft="@dimen/margin_2"
+           android:gravity="center_vertical"
+           android:layout_marginRight="@dimen/margin_10"
+          android:text="Declined"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+      <LinearLayout 
+             android:layout_marginLeft="@dimen/margin_5"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+          android:padding="@dimen/margin_2"
+        android:background="@drawable/white_capsule_back"
+        >
+        
+        <TextView 
+            android:textColor="@color/white_color"
+         
+            android:gravity="center"
+            android:background="@drawable/blue_circle_back"
+     android:visibility="invisible"
+              android:textSize="@dimen/text_size12"
+            android:layout_width="5dp"
+            android:layout_height="25dp"
+            />
+         <TextView 
+             android:id="@+id/status_tv"
+             android:singleLine="true"
+            android:textColor="@color/black_color"
+         android:layout_marginLeft="@dimen/margin_2"
+           android:gravity="center_vertical"
+             android:layout_marginRight="@dimen/margin_10"
+          android:text="State:open"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+</LinearLayout>
+    
+    
+    
+    
+    
+    <View 
+        android:layout_marginTop="@dimen/margin_15"
+        android:layout_marginBottom="@dimen/margin_15"
+        android:background="@color/white_color"
+        android:layout_height="0.5dp"
+        android:layout_width="match_parent"
+        />
+    
+    
+    <TextView 
+        android:textSize="@dimen/text_size16"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_5"
+        android:textColor="@color/white_color"
+        android:text="Date :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/date_tv"
+        />
+    
+     <TextView 
+        android:textSize="@dimen/text_size16"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_5"
+        android:textColor="@color/white_color"
+        android:text="Time :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/time_tv"
+        />
+     <TextView
+         android:visibility="gone"
+        android:textSize="@dimen/text_size16"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_5"
+        android:textColor="@color/white_color"
+        android:text="Formate :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/format_tv"
+        />
+    <TextView 
+        android:textSize="@dimen/text_size16"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_5"
+        android:textColor="@color/white_color"
+        android:text="Number Of Player needed:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/number_of_player_tv"
+        />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="@dimen/text_size16"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:textColor="@color/white_color"
+            android:text="Message : "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+
+
+
+
+
+        <TextView
+            android:textSize="@dimen/text_size16"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:textColor="@color/white_color"
+            android:text="Message:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/message_tv"
+            />
+
+    </LinearLayout>
+
+
+
+    
+    <ListView
+        android:layout_marginTop="@dimen/margin_10"
+        android:dividerHeight="0.5dp"
+        android:divider="@android:color/transparent"
+        android:id="@+id/member_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        ></ListView>
+    
+    <TextView
+        android:paddingTop="@dimen/padding_5"
+        android:paddingBottom="@dimen/padding_5"
+        android:paddingLeft="@dimen/margin_15" 
+        android:paddingRight="@dimen/margin_15"
+        android:id="@+id/delete_btn"
+         android:layout_margin="@dimen/margin_10"
+        android:textColor="@color/white_color"
+        android:background="@drawable/red_circle_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        />
+</LinearLayout>
+</ScrollView>
+</LinearLayout>

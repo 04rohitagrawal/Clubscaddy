@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin_5"
+        android:layout_marginRight="@dimen/margin_5"
+        android:layout_marginTop="@dimen/margin_5"
+        android:background="@color/white_color">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.clubscaddy.custumview.HorizontalListView
+                android:id="@+id/image_galary_id"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/galary_thump_image_width">
+
+            </com.clubscaddy.custumview.HorizontalListView>
+
+
+            <LinearLayout
+                android:weightSum="10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_marginRight="@dimen/margin_5"
+                android:layout_marginTop="@dimen/margin_5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_size16"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                     android:layout_weight="3.5"
+                    android:text="Event Type"
+                    android:textColor="@color/black_color" />
+
+
+                <TextView
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_size16"
+                    android:text=":"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_size14"
+
+                    android:id="@+id/event_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+
+                    android:text="Private"
+                    android:textColor="@color/black_color" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:weightSum="10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_marginRight="@dimen/margin_5"
+                android:layout_marginTop="@dimen/margin_5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:singleLine="true"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.5"
+                    android:textSize="@dimen/text_size16"
+                    android:text="Event Name"
+                    android:textColor="@color/black_color" />
+
+
+
+                <TextView
+                    android:textSize="@dimen/text_size16"
+                    android:text=":"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+
+
+
+
+
+
+                <TextView
+                    android:id="@+id/event_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6.5"
+                    android:textSize="@dimen/text_size14"
+
+                    android:text="Event name"
+                    android:textColor="@color/black_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_marginRight="@dimen/margin_5"
+                android:layout_marginTop="@dimen/margin_5"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="7"
+
+                    android:text="Start Date : "
+                    android:textColor="@color/black_color" />
+
+
+
+                <TextView
+                    android:textSize="@dimen/text_size16"
+                    android:text=":"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:id="@+id/start_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="Event name"
+                    android:textColor="@color/black_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_marginRight="@dimen/margin_5"
+                android:layout_marginTop="@dimen/margin_5"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="End Date : "
+                    android:textColor="@color/black_color" />
+
+                <TextView
+                    android:textSize="@dimen/text_size16"
+                    android:text=":"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:id="@+id/end_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="Event name"
+                    android:textColor="@color/black_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/deadline_date_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_marginRight="@dimen/margin_5"
+                android:layout_marginTop="@dimen/margin_5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textSize="@dimen/text_size16"
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.5"
+                    android:text="Deadline Date"
+                    android:textColor="@color/black_color" />
+
+
+                <TextView
+                    android:textSize="@dimen/text_size16"
+                    android:text=":"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:id="@+id/deadline_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:textSize="@dimen/text_size14"
+
+                    android:text="Event name"
+                    android:textColor="@color/black_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_marginRight="@dimen/margin_5"
+                android:layout_marginTop="@dimen/margin_5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textSize="@dimen/text_size16"
+                    android:layout_weight="3.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:text="Event Cost"
+                    android:textColor="@color/black_color" />
+
+
+                <TextView
+                    android:textSize="@dimen/text_size16"
+                    android:text=":"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:textSize="@dimen/text_size14"
+                    android:layout_weight="6"
+                    android:layout_width="0dp"
+                    android:id="@+id/event_cost"
+                    android:layout_height="wrap_content"
+
+                    android:text="Event name"
+                    android:textColor="@color/blue_color" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:weightSum="10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_marginRight="@dimen/margin_5"
+                android:layout_marginTop="@dimen/margin_5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textSize="@dimen/text_size16"
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                     android:layout_weight="3.5"
+                    android:text="Event State"
+                    android:textColor="@color/black_color" />
+
+
+
+                <TextView
+                    android:textSize="@dimen/text_size16"
+                    android:text=":"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:layout_weight="6"
+
+                    android:id="@+id/event_status_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size14"
+
+                    android:text=""
+                    android:textColor="@color/black_color" />
+            </LinearLayout>
+
+
+            <TextView
+                android:textSize="@dimen/text_size16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_2"
+                android:ems="7"
+                android:padding="@dimen/padding_3"
+                android:text="Description  : "
+                android:textColor="@color/black_color" />
+
+
+
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5"
+
+                android:text="Description : "
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/text_size12" />
+
+            <LinearLayout
+                android:paddingTop="@dimen/padding_8"
+                android:paddingBottom="@dimen/padding_8"
+                android:gravity="center_vertical"
+                android:id="@+id/edit_mode_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <LinearLayout
+
+                    android:id="@+id/edit"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/blue_header"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    >
+
+                    <ImageView
+                        android:id="@+id/edit_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:src="@drawable/evt_edit_icon" />
+
+                    <TextView
+                        android:id="@+id/edit_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/padding_5"
+                        android:text="EDIT"
+                        android:textColor="@color/white_color"
+                        android:textSize="@dimen/text_size10" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.4dp"
+                    android:layout_height="fill_parent"
+                    android:background="#800000ff" />
+
+                <LinearLayout
+                    android:id="@+id/delete"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.21"
+                    android:background="@color/blue_header"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_5">
+
+                    <ImageView
+                        android:id="@+id/delete_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:src="@drawable/evt_delete_icon" />
+
+                    <TextView
+                        android:id="@+id/delete_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/padding_5"
+                        android:text="DELETE"
+                        android:textColor="@color/white_color"
+                        android:textSize="@dimen/text_size10" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.4dp"
+                    android:layout_height="fill_parent"
+                    android:background="#800000ff" />
+
+                <LinearLayout
+                    android:id="@+id/send_notificationLL"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/blue_header"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_5">
+
+                    <ImageView
+                        android:id="@+id/notification_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:src="@drawable/send_notify" />
+
+                    <TextView
+
+                        android:id="@+id/notification_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/padding_5"
+                        android:text="MESSAGE"
+                        android:textColor="@color/white_color"
+                        android:textSize="@dimen/text_size10" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.4dp"
+                    android:layout_height="fill_parent"
+                    android:background="#800000ff" />
+
+                <LinearLayout
+
+                    android:id="@+id/add_member"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/blue_header"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/margin_2">
+
+
+
+                    <TextView
+                        android:drawableTop="@drawable/evt_add_member_icon"
+                        android:id="@+id/join_withdrawl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:drawablePadding="@dimen/padding_5"
+
+                        android:gravity="center_horizontal"
+                        android:text="SIGN UP "
+                        android:textColor="@color/white_color"
+                        android:textSize="@dimen/text_size10" />
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="0.4dp"
+                    android:layout_height="fill_parent"
+                    android:background="#800000ff" />
+
+                <RelativeLayout
+                    android:id="@+id/pdf_icon"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/blue_header"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+
+                    <ImageButton
+                        android:id="@+id/image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@null"
+                        android:src="@drawable/evt_pdf_icon" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:id="@+id/total_pdf_tv"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:textColor="@color/black_color"
+                        android:layout_toRightOf="@id/image"
+                        android:background="@drawable/circle_image_back"
+                        android:text="0"
+                        android:textSize="@dimen/text_size08" />
+
+                    <TextView
+                        android:id="@+id/pdf_tv"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/image"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/padding_5"
+                        android:text="PDF"
+                        android:textColor="@color/white_color"
+                        android:textSize="@dimen/text_size10" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <TextView
+                android:textSize="@dimen/text_size14"
+
+                android:id="@+id/recently_play_match"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/padding_5"
+                android:drawableRight="@drawable/history_black"
+                android:gravity="center"
+                android:padding="@dimen/padding_5"
+                android:text="Matches played for this event  " />
+
+            <TextView
+                android:textSize="@dimen/text_size14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_10"
+                android:text="Participants" />
+
+            <ListView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></ListView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

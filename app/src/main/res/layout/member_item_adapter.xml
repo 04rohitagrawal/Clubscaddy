@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+       
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+        android:background="@color/white_color"
+       
+        android:visibility="visible" >
+
+         <CheckBox
+             android:paddingBottom="@dimen/padding_10"
+             android:paddingTop="@dimen/padding_10"
+             android:paddingLeft="@dimen/padding_10"
+             android:paddingRight="@dimen/padding_10"
+             android:checked="true"
+             android:id="@+id/user_select_checkbox"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+             android:button="@drawable/blue_checkbox_selector" />
+        
+        <LinearLayout
+            android:layout_toRightOf="@id/user_select_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:id="@+id/relative"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="visible" >
+
+                <ImageView
+
+                    android:scaleType="fitXY"
+                      android:layout_gravity="center_vertical"
+                    android:id="@+id/image"
+                    android:layout_width="@dimen/member_profile_size"
+                    android:layout_height="@dimen/member_profile_size"
+                   
+                  
+                    android:src="@drawable/default_img_profile"
+                    android:visibility="visible" />
+
+                <ProgressBar
+                    android:visibility="gone"
+                    android:id="@+id/prog"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                 android:layout_centerVertical="true"
+                android:id="@+id/admin_list_relativeLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white_color"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_5" >
+
+
+
+                <ImageButton
+                    android:id="@+id/right_icon"
+                    android:layout_marginRight="@dimen/margin_15"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/next_arrow"
+                    />
+
+
+                <LinearLayout
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/right_icon"
+                    android:id="@+id/layout"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/admin_list_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="iou iouj"
+                        android:textColor="@color/black_color"
+                        android:textSize="@dimen/text_size16"
+                        android:textStyle="normal" />
+
+                    <!--<TextView
+                        android:id="@+id/admin_list_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/admin_list_name"
+
+                        android:singleLine="true"
+                        android:textColor="@color/black_color"
+                        android:text="iou iouj"
+                        android:textSize="@dimen/text_size14" />
+
+                    <TextView
+                        android:id="@+id/admin_list_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/admin_list_phone"
+
+                        android:singleLine="true"
+                        android:textColor="@color/black_color"
+                        android:text="iou iouj"
+                        android:textSize="@dimen/text_size14" />-->
+                </LinearLayout>
+
+
+
+
+               
+            </RelativeLayout>
+        </LinearLayout>
+
+        
+    </RelativeLayout>
+

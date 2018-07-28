@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_color"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/padding_8"
+    android:paddingTop="@dimen/padding_8"
+    android:weightSum="13">
+
+
+    <LinearLayout
+        android:background="@color/black_color"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"></LinearLayout>
+
+    <RelativeLayout
+        android:layout_weight="3.3"
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:spinnerMode="dropdown"
+            android:id="@+id/avail_list_spiiner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/gray_border_back"
+            />
+
+        <ImageButton
+            android:id="@+id/table_down_arrow"
+            android:layout_marginRight="@dimen/margin_5"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/down_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"></LinearLayout>
+
+    <TextView
+        android:id="@+id/date_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="2.2"
+        android:gravity="center"
+        android:text="Date"
+        android:textColor="@color/black_color"
+        android:textSize="@dimen/text_size11"
+        android:textStyle="normal" />
+
+
+
+
+
+    <TextView
+        android:id="@+id/location_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="2.5"
+        android:enabled="false"
+        android:gravity="center"
+        android:maxLines="2"
+        android:text="Location"
+        android:textColor="@color/black_color"
+        android:textSize="@dimen/text_size11"
+        android:textStyle="normal" />
+
+
+
+    <TextView
+        android:id="@+id/opponent_name_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="2.5"
+        android:enabled="false"
+        android:gravity="center"
+        android:maxLines="2"
+
+        android:text="Opponent"
+        android:textColor="@color/black_color"
+        android:textSize="@dimen/text_size11"
+        android:textStyle="normal" />
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+
+        android:gravity="center"
+        android:textColor="@color/blue_header">
+
+        <ImageView
+            android:id="@+id/edit_btn"
+
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/table_edit" />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

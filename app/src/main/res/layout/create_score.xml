@@ -1,0 +1,1106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tournament_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Tournament"
+            android:textColor="@color/white_color" />
+
+        <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+
+            android:background="@drawable/edittext_background"
+            android:padding="@dimen/padding_3">
+
+            <EditText
+                android:id="@+id/tournament_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_marginRight="@dimen/margin_5"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                android:focusable="false"
+                android:hint="@string/sort_by"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/padding_5"
+                android:paddingLeft="@dimen/padding_10"
+                android:paddingRight="@dimen/padding_10"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColor="@color/gray_color"
+                android:textColorHint="@color/gray_color"
+                android:textSize="@dimen/text_size18" />
+
+            <ImageButton
+
+                android:id="@+id/open_spinner_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/margin_5"
+                android:background="@drawable/down_arrow"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RadioGroup
+            android:id="@+id/single_double_rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="@dimen/margin_5"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/single"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/radio_btn_selector"
+                android:checked="true"
+                android:text="Singles"
+                android:textColor="@color/white_color" />
+
+            <RadioButton
+                android:id="@+id/doublee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_20"
+                android:button="@drawable/radio_btn_selector"
+                android:text="Doubles"
+                android:textColor="@color/white_color" />
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/player_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="@dimen/margin_5"
+            android:text="Player"
+            android:textColor="@color/white_color" />
+
+        <AutoCompleteTextView
+            android:id="@+id/player_et"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/edittext_35"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/edittext_background"
+            android:completionThreshold="1"
+            android:drawablePadding="20dp"
+            android:enabled="true"
+            android:gravity="center_vertical"
+
+            android:imeOptions="actionDone"
+            android:inputType="textEmailAddress"
+            android:longClickable="false"
+            android:paddingLeft="@dimen/margin_20"
+            android:paddingRight="@dimen/margin_20"
+            android:singleLine="true"
+            android:textColor="@color/white_edit_text_color"
+            android:textColorHint="@color/gray_color" />
+
+
+        <TextView
+            android:id="@+id/co_partner_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="Score partner"
+            android:textColor="@color/white_color" />
+
+        <AutoCompleteTextView
+            android:id="@+id/co_partner_et"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/edittext_35"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/edittext_background"
+            android:completionThreshold="1"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:imeOptions="actionDone"
+            android:inputType="textEmailAddress"
+            android:longClickable="false"
+            android:paddingLeft="@dimen/margin_20"
+            android:paddingRight="@dimen/margin_20"
+            android:singleLine="true"
+            android:textColor="@color/white_edit_text_color"
+            android:textColorHint="@color/gray_color" />
+
+        <TextView
+            android:id="@+id/opponent1_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="Opponent-1"
+            android:textColor="@color/white_color" />
+
+        <AutoCompleteTextView
+            android:id="@+id/opponent1_et"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/edittext_35"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/edittext_background"
+            android:completionThreshold="1"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:imeOptions="actionDone"
+            android:inputType="textEmailAddress"
+            android:longClickable="false"
+            android:paddingLeft="@dimen/margin_20"
+            android:paddingRight="@dimen/margin_20"
+            android:singleLine="true"
+            android:textColor="@color/white_edit_text_color"
+            android:textColorHint="@color/gray_color" />
+
+        <TextView
+            android:id="@+id/opponent2_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="Opponent-2"
+            android:textColor="@color/white_color" />
+
+        <AutoCompleteTextView
+            android:id="@+id/opponent2_et"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/edittext_35"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/edittext_background"
+            android:completionThreshold="1"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:imeOptions="actionDone"
+            android:inputType="textEmailAddress"
+            android:longClickable="false"
+            android:paddingLeft="@dimen/margin_20"
+            android:paddingRight="@dimen/margin_20"
+            android:singleLine="true"
+            android:textColor="@color/white_edit_text_color"
+            android:textColorHint="@color/gray_color" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="Score Date"
+            android:textColor="@color/white_color" />
+
+        <EditText
+            android:id="@+id/date_edit_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/edittext_35"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="@dimen/margin_2"
+            android:background="@drawable/edittext_background"
+            android:drawablePadding="20dp"
+            android:drawableRight="@drawable/calendar"
+            android:editable="false"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:hint="Select Date"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:longClickable="false"
+            android:paddingLeft="@dimen/margin_20"
+            android:paddingRight="@dimen/margin_20"
+            android:singleLine="true"
+            android:textColor="@color/white_edit_text_color"
+            android:textColorHint="@color/gray_color"
+            android:textSize="@dimen/text_size14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Select No. of sets"
+                android:textColor="@color/white_color" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+
+                android:background="@drawable/edittext_background"
+                android:padding="@dimen/padding_3">
+
+                <Spinner
+
+
+                    android:id="@+id/set_selection_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/sort_by"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/padding_10"
+                    android:paddingRight="@dimen/padding_10"
+
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textColor="@color/black_color"
+                    android:textColorHint="@color/gray_color"
+                    android:textSize="@dimen/text_size14" />
+
+                <ImageButton
+                    android:id="@+id/open_spinner_btn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:background="@drawable/down_arrow"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+            <!-- <EditText
+                android:id="@+id/set_selection_et"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/edittext_35"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_background"
+                android:drawablePadding="20dp"
+                android:drawableRight="@drawable/down_arrow"
+                android:editable="false"
+                android:focusable="false"
+                android:gravity="center_vertical"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:longClickable="false"
+                android:paddingLeft="@dimen/margin_20"
+                android:paddingRight="@dimen/margin_20"
+                android:singleLine="true"
+                android:text="3"
+                android:textColor="@color/white_edit_text_color"
+                android:textColorHint="@color/gray_color" /> -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:text="Game I/We Won"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/text_size14" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_marginRight="@dimen/margin_5"
+                android:background="@color/white_color"
+                android:paddingBottom="@dimen/padding_3"
+                android:paddingTop="@dimen/padding_3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Game opponents won"
+
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/text_size14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Set-1"
+                android:textColor="@color/white_color" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_weight="1"
+
+                android:background="@drawable/edittext_background"
+                android:padding="@dimen/padding_3">
+
+                <Spinner
+
+                    android:id="@+id/set1_me"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/sort_by"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/padding_10"
+                    android:paddingRight="@dimen/padding_10"
+
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textColor="@color/black_color"
+                    android:textColorHint="@color/gray_color"
+                    android:textSize="@dimen/text_size14" />
+
+                <ImageButton
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:background="@drawable/down_arrow" />
+            </RelativeLayout>
+            <!-- <EditText
+                android:id="@+id/set1_me"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/edittext_35"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_background"
+                android:drawablePadding="20dp"
+                android:drawableRight="@drawable/down_arrow"
+                android:editable="false"
+                android:focusable="false"
+                android:gravity="center_vertical"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:longClickable="false"
+                android:paddingLeft="@dimen/margin_20"
+                android:paddingRight="@dimen/margin_20"
+                android:singleLine="true"
+                android:textColor="@color/white_edit_text_color"
+                android:textColorHint="@color/gray_color" /> -->
+
+            <!-- <EditText
+                android:id="@+id/set1_opposite"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/edittext_35"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_background"
+                android:drawablePadding="20dp"
+                android:drawableRight="@drawable/down_arrow"
+                android:editable="false"
+                android:focusable="false"
+                android:gravity="center_vertical"
+                android:imeOptions="actionNext"
+                android:longClickable="false"
+                android:paddingLeft="@dimen/margin_20"
+                android:paddingRight="@dimen/margin_20"
+                android:singleLine="true"
+                android:textColor="@color/white_edit_text_color"
+                android:textColorHint="@color/gray_color" /> -->
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_weight="1"
+
+                android:background="@drawable/edittext_background"
+                android:padding="@dimen/padding_3">
+
+                <Spinner
+
+                    android:id="@+id/set1_opposite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/sort_by"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/padding_10"
+                    android:paddingRight="@dimen/padding_10"
+
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textColor="@color/black_color"
+                    android:textColorHint="@color/gray_color"
+                    android:textSize="@dimen/text_size14" />
+
+                <ImageButton
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:background="@drawable/down_arrow" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Set-2"
+                android:textColor="@color/white_color" />
+
+            <!-- <EditText
+                android:id="@+id/set2_me"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/edittext_35"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_background"
+                android:drawablePadding="20dp"
+                android:drawableRight="@drawable/down_arrow"
+                android:editable="false"
+                android:focusable="false"
+                android:gravity="center_vertical"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:longClickable="false"
+                android:paddingLeft="@dimen/margin_20"
+                android:paddingRight="@dimen/margin_20"
+                android:singleLine="true"
+                android:textColor="@color/white_edit_text_color"
+                android:textColorHint="@color/gray_color" /> -->
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_weight="1"
+
+                android:background="@drawable/edittext_background"
+                android:padding="@dimen/padding_3">
+
+                <Spinner
+
+                    android:id="@+id/set2_me"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/sort_by"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/padding_10"
+                    android:paddingRight="@dimen/padding_10"
+
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textColor="@color/black_color"
+                    android:textColorHint="@color/gray_color"
+                    android:textSize="@dimen/text_size14" />
+
+                <ImageButton
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:background="@drawable/down_arrow" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_weight="1"
+
+                android:background="@drawable/edittext_background"
+                android:padding="@dimen/padding_3">
+
+                <Spinner
+
+                    android:id="@+id/set2_opposite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/sort_by"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/padding_10"
+                    android:paddingRight="@dimen/padding_10"
+
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textColor="@color/black_color"
+                    android:textColorHint="@color/gray_color"
+                    android:textSize="@dimen/text_size14" />
+
+                <ImageButton
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:background="@drawable/down_arrow" />
+            </RelativeLayout>
+            <!--   <EditText
+                  android:id="@+id/set2_opposite"
+                  android:layout_width="0dp"
+                  android:layout_height="@dimen/edittext_35"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginRight="10dp"
+                  android:layout_marginTop="2dp"
+                  android:layout_weight="1"
+                  android:background="@drawable/edittext_background"
+                  android:drawablePadding="20dp"
+                  android:drawableRight="@drawable/down_arrow"
+                  android:editable="false"
+                  android:focusable="false"
+                  android:gravity="center_vertical"
+                  android:imeOptions="actionNext"
+                  android:longClickable="false"
+                  android:paddingLeft="@dimen/margin_20"
+                  android:paddingRight="@dimen/margin_20"
+                  android:singleLine="true"
+                  android:textColor="@color/white_edit_text_color"
+                  android:textColorHint="@color/gray_color" /> -->
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Set-3"
+                android:textColor="@color/white_color" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_weight="1"
+
+                android:background="@drawable/edittext_background"
+                android:padding="@dimen/padding_3">
+
+                <Spinner
+
+                    android:id="@+id/set3_me"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/sort_by"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/padding_10"
+                    android:paddingRight="@dimen/padding_10"
+
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textColor="@color/black_color"
+                    android:textColorHint="@color/gray_color"
+                    android:textSize="@dimen/text_size14" />
+
+                <ImageButton
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:background="@drawable/down_arrow" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_weight="1"
+
+                android:background="@drawable/edittext_background"
+                android:padding="@dimen/padding_3">
+
+                <Spinner
+
+                    android:id="@+id/set3_opposite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/sort_by"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/padding_10"
+                    android:paddingRight="@dimen/padding_10"
+
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textColor="@color/black_color"
+                    android:textColorHint="@color/gray_color"
+                    android:textSize="@dimen/text_size14" />
+
+                <ImageButton
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:background="@drawable/down_arrow" />
+            </RelativeLayout>
+            <!--  <EditText
+                 android:id="@+id/set3_me"
+                 android:layout_width="0dp"
+                 android:layout_height="@dimen/edittext_35"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginRight="10dp"
+                 android:layout_marginTop="2dp"
+                 android:layout_weight="1"
+                 android:background="@drawable/edittext_background"
+                 android:drawablePadding="20dp"
+                 android:drawableRight="@drawable/down_arrow"
+                 android:editable="false"
+                 android:focusable="false"
+                 android:gravity="center_vertical"
+                 android:imeOptions="actionNext"
+                 android:inputType="textEmailAddress"
+                 android:longClickable="false"
+                 android:paddingLeft="@dimen/margin_20"
+                 android:paddingRight="@dimen/margin_20"
+                 android:singleLine="true"
+                 android:textColor="@color/white_edit_text_color"
+                 android:textColorHint="@color/gray_color" />
+
+             <EditText
+                 android:id="@+id/set3_opposite"
+                 android:layout_width="0dp"
+                 android:layout_height="@dimen/edittext_35"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginRight="10dp"
+                 android:layout_marginTop="2dp"
+                 android:layout_weight="1"
+                 android:background="@drawable/edittext_background"
+                 android:drawablePadding="20dp"
+                 android:drawableRight="@drawable/down_arrow"
+                 android:editable="false"
+                 android:focusable="false"
+                 android:gravity="center_vertical"
+                 android:imeOptions="actionNext"
+                 android:longClickable="false"
+                 android:paddingLeft="@dimen/margin_20"
+                 android:paddingRight="@dimen/margin_20"
+                 android:singleLine="true"
+                 android:textColor="@color/white_edit_text_color"
+                 android:textColorHint="@color/gray_color" /> -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/set4_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/set4tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Set-4"
+                android:textColor="@color/white_color"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_weight="1"
+
+                android:background="@drawable/edittext_background"
+                android:padding="@dimen/padding_3">
+
+                <Spinner
+
+                    android:id="@+id/set4_me"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/sort_by"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/padding_10"
+                    android:paddingRight="@dimen/padding_10"
+
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textColor="@color/black_color"
+                    android:textColorHint="@color/gray_color"
+                    android:textSize="@dimen/text_size14" />
+
+                <ImageButton
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:background="@drawable/down_arrow" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_weight="1"
+
+                android:background="@drawable/edittext_background"
+                android:padding="@dimen/padding_3">
+
+                <Spinner
+
+                    android:id="@+id/set4_opposite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/sort_by"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/padding_10"
+                    android:paddingRight="@dimen/padding_10"
+
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textColor="@color/black_color"
+                    android:textColorHint="@color/gray_color"
+                    android:textSize="@dimen/text_size14" />
+
+                <ImageButton
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:background="@drawable/down_arrow" />
+            </RelativeLayout>
+            <!--  <EditText
+                 android:id="@+id/set4_me"
+                 android:layout_width="0dp"
+                 android:layout_height="@dimen/edittext_35"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginRight="10dp"
+                 android:layout_marginTop="2dp"
+                 android:layout_weight="1"
+                 android:background="@drawable/edittext_background"
+                 android:drawablePadding="20dp"
+                 android:drawableRight="@drawable/down_arrow"
+                 android:editable="false"
+                 android:focusable="false"
+                 android:gravity="center_vertical"
+                 android:imeOptions="actionNext"
+                 android:inputType="textEmailAddress"
+                 android:longClickable="false"
+                 android:paddingLeft="@dimen/margin_20"
+                 android:paddingRight="@dimen/margin_20"
+                 android:singleLine="true"
+                 android:textColor="@color/white_edit_text_color"
+                 android:textColorHint="@color/gray_color"
+                 android:visibility="gone" />
+
+             <EditText
+                 android:id="@+id/set4_opposite"
+                 android:layout_width="0dp"
+                 android:layout_height="@dimen/edittext_35"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginRight="10dp"
+                 android:layout_marginTop="2dp"
+                 android:layout_weight="1"
+                 android:background="@drawable/edittext_background"
+                 android:drawablePadding="20dp"
+                 android:drawableRight="@drawable/down_arrow"
+                 android:editable="false"
+                 android:focusable="false"
+                 android:gravity="center_vertical"
+                 android:imeOptions="actionNext"
+                 android:longClickable="false"
+                 android:paddingLeft="@dimen/margin_20"
+                 android:paddingRight="@dimen/margin_20"
+                 android:singleLine="true"
+                 android:textColor="@color/white_edit_text_color"
+                 android:textColorHint="@color/gray_color"
+                 android:visibility="gone" /> -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/set5_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/set5tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Set-5"
+                android:textColor="@color/white_color"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_weight="1"
+
+                android:background="@drawable/edittext_background"
+                android:padding="@dimen/padding_3">
+
+                <Spinner
+
+                    android:id="@+id/set5_me"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/sort_by"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/padding_10"
+                    android:paddingRight="@dimen/padding_10"
+
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textColor="@color/black_color"
+                    android:textColorHint="@color/gray_color"
+                    android:textSize="@dimen/text_size14" />
+
+                <ImageButton
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:background="@drawable/down_arrow" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_weight="1"
+
+                android:background="@drawable/edittext_background"
+                android:padding="@dimen/padding_3">
+
+                <Spinner
+
+                    android:id="@+id/set5_opposite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/sort_by"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/padding_10"
+                    android:paddingRight="@dimen/padding_10"
+
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textColor="@color/black_color"
+                    android:textColorHint="@color/gray_color"
+                    android:textSize="@dimen/text_size14" />
+
+                <ImageButton
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:background="@drawable/down_arrow" />
+            </RelativeLayout>
+            <!--    <EditText
+                   android:id="@+id/set5_me"
+                   android:layout_width="0dp"
+                   android:layout_height="@dimen/edittext_35"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginRight="10dp"
+                   android:layout_marginTop="2dp"
+                   android:layout_weight="1"
+                   android:background="@drawable/edittext_background"
+                   android:drawablePadding="20dp"
+                   android:drawableRight="@drawable/down_arrow"
+                   android:editable="false"
+                   android:focusable="false"
+                   android:gravity="center_vertical"
+                   android:imeOptions="actionNext"
+                   android:inputType="textEmailAddress"
+                   android:longClickable="false"
+                   android:paddingLeft="@dimen/margin_20"
+                   android:paddingRight="@dimen/margin_20"
+                   android:singleLine="true"
+                   android:textColor="@color/white_edit_text_color"
+                   android:textColorHint="@color/gray_color"
+                   android:visibility="gone" />
+
+               <EditText
+                   android:id="@+id/set5_opposite"
+                   android:layout_width="0dp"
+                   android:layout_height="@dimen/edittext_35"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginRight="10dp"
+                   android:layout_marginTop="2dp"
+                   android:layout_weight="1"
+                   android:background="@drawable/edittext_background"
+                   android:drawablePadding="20dp"
+                   android:drawableRight="@drawable/down_arrow"
+                   android:editable="false"
+                   android:focusable="false"
+                   android:gravity="center_vertical"
+                   android:imeOptions="actionNext"
+                   android:longClickable="false"
+                   android:paddingLeft="@dimen/margin_20"
+                   android:paddingRight="@dimen/margin_20"
+                   android:singleLine="true"
+                   android:textColor="@color/white_edit_text_color"
+                   android:textColorHint="@color/gray_color"
+                   android:visibility="gone" /> -->
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/okbutton" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:layout_width="match_parent">
+
+
+    <com.clubscaddy.custumview.CustomScrollView
+        android:id="@+id/scollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:fillViewport="true"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/mainView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <EditText
+            android:editable="false"
+            android:clickable="false"
+            android:id="@+id/msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_5"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginRight="@dimen/margin_20"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="@drawable/whitecolor_background"
+            android:gravity="center"
+            android:padding="@dimen/padding_10"
+            android:text="hello" />
+
+        <LinearLayout
+            android:id="@+id/delete_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/delete_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/red"
+                android:paddingBottom="@dimen/padding_10"
+                android:paddingLeft="@dimen/margin_20"
+                android:paddingRight="@dimen/margin_20"
+                android:paddingTop="@dimen/padding_10"
+                android:text="Delete"
+                android:textColor="@color/white_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/yes_no_btn_linear_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/yes_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_5"
+                android:background="@color/green_bg_color"
+                android:padding="@dimen/padding_10"
+                android:text="      Yes      " />
+
+            <Button
+                android:id="@+id/no_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_5"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@color/red"
+                android:padding="@dimen/padding_10"
+                android:text="      No      " />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/answerBtns"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/yes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/green_selection_color"
+                android:gravity="center"
+                android:padding="@dimen/padding_10"
+                android:text="YES"
+                android:textColor="@color/white_color" />
+
+            <TextView
+                android:id="@+id/no"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/red"
+                android:gravity="center"
+                android:padding="@dimen/padding_10"
+                android:text="NO"
+                android:textColor="@color/white_color" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/readListTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_10"
+            android:background="@color/white_color"
+            android:padding="@dimen/padding_10"
+            android:text="READ"
+            android:textColor="#95435daa" />
+
+        <ListView
+            android:id="@+id/read_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp" >
+        </ListView>
+
+        <TextView
+            android:id="@+id/unreadListTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="@color/white_color"
+            android:padding="@dimen/padding_10"
+            android:text="UNREAD"
+            android:textColor="#80435daa" />
+
+        <ListView
+            android:id="@+id/unread_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp" >
+        </ListView>
+
+        <TextView
+            android:id="@+id/notAnswerListTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="@color/white_color"
+            android:padding="@dimen/padding_10"
+            android:text="RED BUT NOT REPLY"
+            android:textColor="#80435daa" />
+
+        <ListView
+            android:id="@+id/notanswer_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp" >
+        </ListView>
+
+        <TextView
+            android:id="@+id/unread_list_count_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="@color/white_color"
+            android:padding="@dimen/padding_10"
+            android:text="Unread"
+            android:textColor="#80435daa" />
+
+        <ListView
+            android:id="@+id/unreadble_match_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_marginTop="1dp"
+            android:divider="@color/gray_color"
+            android:dividerHeight="0.5dp" >
+        </ListView>
+    </LinearLayout>
+
+</com.clubscaddy.custumview.CustomScrollView>
+    </LinearLayout>

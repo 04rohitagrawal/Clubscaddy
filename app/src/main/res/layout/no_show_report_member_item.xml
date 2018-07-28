@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="horizontal"
+    android:visibility="visible">
+
+
+
+    <RelativeLayout
+        android:id="@+id/image_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/user_profile_iv"
+            android:layout_width="@dimen/member_profile_size"
+            android:layout_height="@dimen/member_profile_size"
+
+            android:layout_margin="10dp"
+            android:background="@drawable/default_img_profile"
+            android:visibility="visible" />
+
+
+        <ProgressBar
+            android:id="@+id/image_loader_progressbar"
+            android:layout_width="@dimen/cross_image_sze"
+            android:layout_height="@dimen/cross_image_sze"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+
+
+
+
+     <LinearLayout
+         android:id="@+id/countr_layout"
+         android:orientation="vertical"
+         android:layout_alignParentRight="true"
+         android:layout_centerVertical="true"
+         android:layout_marginRight="@dimen/margin_10"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content">
+         <TextView
+              android:layout_gravity="center_horizontal"
+
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:text="No show"
+             android:textColor="@color/black_color"
+             android:textSize="@dimen/text_size12" />
+
+
+            <TextView
+                android:minEms="3"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_5"
+                android:paddingBottom="@dimen/padding_5"
+                android:paddingTop="@dimen/padding_5"
+                android:paddingLeft="@dimen/margin_2"
+                android:paddingRight="@dimen/margin_2"
+                android:maxLength="5"
+                android:text="23895"
+                android:id="@+id/no_show_user_counter_tv"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/text_size12"
+                android:background="@drawable/blue_rect_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+     </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+
+       android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/image_layout"
+        android:id="@+id/admin_list_relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_weight="1"
+        android:layout_toLeftOf="@id/countr_layout"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_5">
+
+        <TextView
+
+            android:id="@+id/user_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="iou iouj"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/text_size16"
+            android:textStyle="normal" />
+
+       <!-- <TextView
+            android:id="@+id/user_phone_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/admin_list_name"
+            android:layout_marginTop="-2dp"
+            android:singleLine="true"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/text_size14" />
+
+        <TextView
+
+            android:id="@+id/user_email_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/admin_list_phone"
+            android:layout_marginTop="-2dp"
+            android:singleLine="true"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/text_size14" />-->
+
+
+    </LinearLayout>
+</RelativeLayout>
+
+

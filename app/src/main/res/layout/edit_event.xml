@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+
+
+
+    <LinearLayout
+        android:id="@+id/tab_layout"
+        android:visibility="visible"
+
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        >
+        <LinearLayout
+            android:padding="@dimen/margin_15"
+            android:id="@+id/edit_event_tab"
+
+            android:background="@drawable/active_tb_bg"
+
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:textSize="@dimen/text_size14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/white_color"
+                android:text="Edit Event"
+
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:padding="@dimen/margin_15"
+
+            android:background="@color/unselected_tab"
+            android:id="@+id/manage_event_tab"
+
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+            <TextView
+                android:textSize="@dimen/text_size14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/white_color"
+
+                android:text="Manage Event"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:id="@+id/add_modetoror_layout"
+        android:layout_below="@id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+
+            android:id="@+id/add_mod_tv"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginTop="@dimen/padding_10"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size16"
+            android:text="Add Moderator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <AutoCompleteTextView
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:textSize="@dimen/text_size18"
+            android:layout_marginTop="@dimen/margin_10"
+            android:hint="Enter moderator"
+            android:completionThreshold="1"
+            android:singleLine="true"
+            android:id="@+id/member_name_edit_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_8"
+            android:background="@drawable/edittext_background"
+            android:drawablePadding="20dp"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+
+            android:textColor="@color/white_edit_text_color"
+            android:textColorHint="@color/gray_color" />
+
+        <RelativeLayout
+            android:layout_below="@id/member_name_edit_tv"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <Button
+
+                android:textColor="@color/white_color"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/green_circle_back"
+
+                android:layout_alignParentBottom="true"
+                android:paddingTop="@dimen/padding_10"
+                android:paddingBottom="@dimen/padding_10"
+                android:paddingLeft="@dimen/margin_20"
+                android:paddingRight="@dimen/margin_20"
+
+                android:text="Start Event"
+                android:id="@+id/change_event_status_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <ListView
+
+                android:layout_marginTop="@dimen/padding_10"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:layout_above="@id/change_event_status_btn"
+                android:dividerHeight="1dp"
+                android:divider="@color/gray_color"
+                android:id="@+id/event_moderotor_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></ListView>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+        <com.clubscaddy.custumview.CustomScrollView
+            android:id="@+id/edit_tab_layout"
+           android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_10"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:weightSum="2"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <CheckBox
+                            android:id="@+id/private_check_box"
+                            android:checked="true"
+                            android:drawablePadding="@dimen/margin_10"
+                            android:layout_weight="1"
+                            android:button="@drawable/radio_btn_selector"
+                            android:textSize="@dimen/text_size18"
+                            android:textColor="@color/white_color"
+                            android:text="   Private"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+
+
+
+
+
+                        <CheckBox
+                            android:id="@+id/public_check_box"
+                            android:checked="false"
+                            android:drawablePadding="@dimen/margin_10"
+                            android:layout_weight="1"
+                            android:button="@drawable/radio_btn_selector"
+                            android:textSize="@dimen/text_size18"
+                            android:textColor="@color/white_color"
+                            android:text="   Public"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_marginTop="@dimen/margin_15"
+                        android:textSize="@dimen/text_size16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_20"
+                        android:layout_marginRight="@dimen/margin_10"
+                        android:padding="@dimen/padding_5"
+                        android:text="@string/event_name"
+                        android:textColor="@color/white_color" />
+
+                    <EditText
+                        android:id="@+id/event_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_background"
+                        android:hint="@string/event_name"
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapSentences"
+                        android:paddingLeft="@dimen/margin_20"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:padding="@dimen/padding_8"
+                        android:textColor="@color/black_color"
+                        android:textColorHint="@color/gray_color"
+                        android:textSize="@dimen/text_size18" />
+
+                    <TextView
+                        android:textSize="@dimen/text_size16"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_20"
+                        android:layout_marginRight="@dimen/margin_10"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:padding="@dimen/padding_5"
+                        android:text="@string/start_date"
+                        android:textColor="@color/white_color" />
+
+                    <EditText
+                        android:visibility="gone"
+                        android:id="@+id/start_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_background"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:hint="@string/start_date"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:padding="@dimen/padding_8"
+                        android:paddingLeft="@dimen/margin_20"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:textColor="@color/black_color"
+                        android:textColorHint="@color/gray_color"
+                        android:textSize="@dimen/text_size18" />
+
+                    <TextView
+                        android:textSize="@dimen/text_size16"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_20"
+                        android:layout_marginRight="@dimen/margin_10"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:padding="@dimen/padding_5"
+                        android:text="@string/end_date"
+                        android:textColor="@color/white_color" />
+
+                    <EditText
+                        android:visibility="gone"
+                        android:id="@+id/end_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_background"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:hint="@string/end_date"
+                        android:imeOptions="actionNext"
+                        android:inputType="textEmailAddress"
+                        android:paddingLeft="@dimen/margin_20"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:padding="@dimen/padding_8"
+                        android:textColor="@color/black_color"
+                        android:textColorHint="@color/gray_color"
+                        android:textSize="@dimen/text_size18" />
+
+                    <LinearLayout
+
+                        android:id="@+id/deadline_date_layout"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textSize="@dimen/text_size16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_20"
+                            android:layout_marginRight="@dimen/margin_10"
+                            android:layout_marginTop="@dimen/padding_5"
+                            android:padding="@dimen/padding_5"
+                            android:text="@string/deadlinedate"
+                            android:textColor="@color/white_color" />
+
+                        <EditText
+
+                            android:id="@+id/deadlineDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edittext_background"
+                            android:editable="false"
+                            android:padding="@dimen/padding_8"
+                            android:focusable="false"
+                            android:hint="@string/deadlinedate"
+                            android:imeOptions="actionNext"
+                            android:inputType="textEmailAddress"
+                            android:paddingLeft="@dimen/margin_20"
+                            android:scrollHorizontally="true"
+                            android:singleLine="true"
+                            android:textColor="@color/black_color"
+                            android:textColorHint="@color/gray_color"
+                            android:textSize="@dimen/text_size18" />
+                        </LinearLayout>
+
+
+
+                    <TextView
+                        android:id="@+id/cost_tv"
+
+                        android:textSize="@dimen/text_size16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_20"
+                        android:layout_marginRight="@dimen/margin_10"
+                        android:layout_marginTop="@dimen/padding_5"
+                        android:padding="@dimen/padding_5"
+                        android:text="@string/event_cost"
+                        android:textColor="@color/white_color" />
+
+                    <EditText
+                        android:maxLength="12"
+
+                        android:id="@+id/event_cost"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_background"
+                        android:hint="@string/event_cost"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="@dimen/margin_20"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:padding="@dimen/padding_8"
+                        android:textColor="@color/black_color"
+                        android:textColorHint="@color/gray_color"
+                        android:textSize="@dimen/text_size18" />
+
+                    <RelativeLayout
+
+                        android:layout_marginLeft="@dimen/margin_20"
+                        android:layout_marginRight="@dimen/margin_10"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textSize="@dimen/text_size16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/event_description"
+                            android:textColor="@color/white_color" />
+
+
+                        <TextView
+                            android:textSize="@dimen/text_size16"
+
+                            android:id="@+id/discription_textview_status"
+                            android:layout_alignParentRight="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0/1000"
+                            android:textColor="@color/white_color" />
+
+
+                    </RelativeLayout>
+
+                    <EditText
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:maxLength="1000"
+                        android:id="@+id/event_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_background"
+                        android:gravity="top|left"
+                        android:hint="@string/event_description"
+                        android:imeOptions="actionDone"
+                        android:lines="8"
+                        android:minLines="6"
+                        android:padding="@dimen/padding_8"
+                        android:paddingLeft="@dimen/margin_20"
+                        android:paddingTop="@dimen/padding_10"
+                        android:textColor="@color/black_color"
+                        android:textColorHint="@color/gray_color"
+                        android:textSize="@dimen/text_size18" />
+
+
+
+                    <CheckBox
+                        android:layout_margin="@dimen/margin_10"
+                        android:id="@+id/enable_scoring"
+                        android:drawableLeft="@android:color/transparent"
+                        android:drawablePadding="10dp"
+                        android:button="@drawable/white_checkbox_selector"
+                        android:textColor="@color/white_color"
+                        android:textSize="@dimen/text_size14"
+                        android:text="Enable posting scores"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="@dimen/padding_10"
+                            android:text="Attach images"
+                            android:textColor="@color/white_color" />
+
+                        <Button
+                            android:id="@+id/add_attachment"
+                            android:layout_width="@dimen/add_btn_size"
+                            android:layout_height="@dimen/add_btn_size"
+                            android:background="@drawable/add_btn" />
+                    </LinearLayout>
+
+                    <Gallery
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:id="@+id/image_gallery"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:background="@android:color/transparent"
+                        android:spacing="@dimen/padding_5" />
+
+
+
+
+
+                    <Button
+                        android:id="@+id/adminList_addAdmin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/margin_20"
+                        android:background="@drawable/okbutton"
+                        android:gravity="center"
+                        android:src="@drawable/okbutton"
+                        android:textColor="@color/white_color"
+                        android:textSize="@dimen/text_size18" />
+                </LinearLayout>
+
+                <com.clubscaddy.custumview.CircularProgressBar
+                    android:id="@+id/circularProgressbar"
+                    android:layout_width="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_height="100dp"
+                    android:visibility="gone"
+                    app:cpb_background_progressbar_color="#b6bbd8"
+                    app:cpb_background_progressbar_width="10dp"
+                    app:cpb_progressbar_color="#3f51b5"
+                    app:cpb_progressbar_width="10dp" />
+
+            </RelativeLayout>
+        </com.clubscaddy.custumview.CustomScrollView>
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

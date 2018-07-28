@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/margin_40"
+    android:background="@android:color/transparent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_header"
+        android:gravity="center"
+        android:padding="@dimen/padding_10"
+        android:text="Add Participant"
+        android:textColor="@color/white_color" />
+    <LinearLayout
+        android:id="@+id/tab_layout"
+        android:visibility="visible"
+        android:layout_marginTop="@dimen/margin_2"
+        android:background="@color/white_color"
+        android:paddingTop="@dimen/padding_5"
+        android:paddingBottom="1dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        >
+        <LinearLayout
+
+            android:id="@+id/individual_tab"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_margin="@dimen/margin_5"
+                android:textSize="@dimen/text_size14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black_color"
+
+                android:text="By Individual"
+                />
+            <View
+                android:id="@+id/individual_tab_line_view"
+                android:layout_marginTop="@dimen/margin_5"
+                android:background="@color/black_color"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/group_tab"
+            >
+            <TextView
+                android:layout_margin="@dimen/margin_5"
+                android:textSize="@dimen/text_size14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black_color"
+
+                android:text="By Group"
+                />
+            <View
+                android:id="@+id/by_group_line_view"
+                android:visibility="gone"
+
+                android:layout_marginTop="@dimen/margin_5"
+                android:background="@color/black_color"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+
+            android:id="@+id/individual_tab_layout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <AutoCompleteTextView
+                android:completionThreshold="1"
+                android:layout_marginLeft="@dimen/padding_10"
+                android:layout_marginRight="@dimen/padding_10"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:layout_marginTop="@dimen/margin_10"
+                android:textColor="@color/black_color"
+                android:id="@+id/search_member"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/padding_10"
+                android:paddingTop="@dimen/padding_12"
+                android:paddingBottom="@dimen/padding_10"
+                android:background="@drawable/black_border_back"
+                android:hint="Search Member"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/group_tab_layout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/group_name_ev"
+                android:singleLine="true"
+                android:padding="@dimen/margin_10"
+                android:layout_margin="@dimen/margin_15"
+                android:background="@drawable/black_border_back"
+                android:hint="Search Group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <ListView
+                android:layout_marginBottom="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:id="@+id/group_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></ListView>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

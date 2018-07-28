@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+   android:background="@color/white_color"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/court_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/blue_header"
+        android:clickable="false"
+        android:gravity="center"
+        android:padding="@dimen/padding_10"
+        android:text="Local Calender Reservation Details"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/text_size16" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="left"
+            android:textSize="@dimen/text_size16"
+            android:text="Reservation name"
+            android:textColor="@color/black_color"
+            android:layout_margin="@dimen/margin_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+        <TextView
+            android:id="@+id/discription_textview_status"
+            android:gravity="right"
+            android:textSize="@dimen/text_size16"
+            android:text="0/50"
+            android:textColor="@color/black_color"
+            android:layout_margin="@dimen/margin_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+
+    </RelativeLayout>
+
+
+
+    <EditText
+        android:id="@+id/reservation_edit_tv"
+        android:padding="@dimen/margin_10"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:background="@drawable/whitecolor_background"
+      android:maxLines="2"
+        android:minLines="2"
+        android:gravity="top|left"
+        android:maxLength="50"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_gravity="left"
+        android:layout_marginTop="@dimen/margin_10"
+        android:text="Select alert time"
+        android:textSize="@dimen/text_size16"
+        android:textColor="@color/black_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_margin="@dimen/margin_10"
+
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/whitecolor_background"
+        android:padding="@dimen/padding_5"
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageButton
+            android:layout_centerVertical="true"
+            android:id="@+id/open_spinner_btn"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/margin_5"
+            android:background="@drawable/down_arrow"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+
+        <Spinner
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_marginLeft="@dimen/margin_10"
+
+            android:id="@+id/time_list_spinner"
+            android:padding="@dimen/padding_3"
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Spinner>
+
+        </RelativeLayout>
+
+
+
+
+    <Button
+        android:id="@+id/done_btn"
+        android:textSize="@dimen/text_size16"
+        android:layout_marginTop="@dimen/margin_10"
+        android:textColor="@color/white_color"
+        android:text="Done"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/blue_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

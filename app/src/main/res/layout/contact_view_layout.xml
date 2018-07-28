@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+
+    android:layout_height="match_parent" >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="vertical"
+                android:padding="@dimen/padding_10" >
+                <ImageView
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/login_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:background="@drawable/logo_login"
+                    android:contentDescription="@string/app_name" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:gravity="left"
+                    android:text="Subject"
+                    android:textColor="@color/white_color"
+                    android:textSize="@dimen/text_size18" />
+
+                <EditText
+                    android:id="@+id/enter_name_edit_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:background="@drawable/white_background"
+                    android:hint="Please provide a subject"
+                    android:padding="@dimen/padding_10"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:gravity="left"
+                    android:text="Description"
+                    android:textColor="@color/white_color"
+                    android:textSize="@dimen/text_size18" />
+
+                <EditText
+                    android:id="@+id/discription_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:background="@drawable/white_background"
+                    android:gravity="top"
+                    android:hint="Message"
+                    android:minLines="5"
+                    android:padding="@dimen/padding_10" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <Button
+                        android:id="@+id/send_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:background="@color/green_bg_color"
+                        android:paddingLeft="@dimen/margin_30"
+                        android:paddingRight="@dimen/margin_30"
+                        android:text="Send"
+                        android:textColor="@color/white_color" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="@dimen/margin_10" >
+
+                        <ImageButton
+                            android:id="@+id/face_book_image_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/facebook" />
+
+                        <ImageButton
+                            android:id="@+id/twitter_image_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/twitter" />
+
+                        <ImageButton
+                            android:id="@+id/linkin_image_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/linkedin" />
+
+                        <ImageButton
+                            android:id="@+id/instram_image_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/instagram"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white_color" >
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:id="@+id/phone_no_text_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:drawableLeft="@drawable/call"
+                android:drawablePadding="@dimen/padding_3"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/padding_5"
+                android:paddingTop="@dimen/padding_5"
+                android:text=""
+                android:textColor="@color/blue_header"
+                android:textSize="@dimen/text_size12" />
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:id="@+id/link_text_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/margin_5"
+                android:drawableLeft="@drawable/web"
+                android:drawablePadding="@dimen/padding_3"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/padding_5"
+                android:paddingTop="@dimen/padding_5"
+                android:text=""
+                android:textColor="@color/blue_header"
+                android:textSize="@dimen/text_size12" />
+        </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

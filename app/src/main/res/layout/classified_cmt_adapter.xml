@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:paddingBottom="@dimen/margin_10"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:background="@color/blue_header"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/header_tv"
+            android:padding="@dimen/padding_10"
+            android:text="Comments"
+            android:textColor="@color/white_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <ImageView
+            android:id="@+id/cross_btn_iv"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/cancel_icon_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:divider="@color/divider_line_color"
+            android:dividerHeight="0.5dp"
+            android:layout_alignParentTop="true"
+            android:id="@+id/classified_cmt_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+
+
+
+
+
+
+</LinearLayout>

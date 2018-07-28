@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/comment_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10">
+
+
+        <RelativeLayout
+            android:layout_marginLeft="@dimen/margin_5"
+
+            android:layout_alignParentTop="true"
+             android:id="@+id/ralative_layout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/commenter_image_view"
+            android:layout_width="@dimen/member_profile_size"
+            android:layout_height="@dimen/member_profile_size"
+            android:background="@drawable/default_img_profile" />
+
+            <ProgressBar
+                android:id="@+id/image_loader_progressbar"
+                android:layout_width="@dimen/cross_image_sze"
+                android:layout_height="@dimen/cross_image_sze"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center" />
+
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/delete_cmt_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/cancel_icon" />
+
+
+        <LinearLayout
+            android:id="@+id/comment_box_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_toLeftOf="@id/delete_cmt_btn"
+            android:layout_toRightOf="@+id/ralative_layout"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/commenter_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="Rohit Agrawal"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/text_size14"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/comment_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/commenter_image_view"
+                android:text="I am sending your jhdasf fjsdf dsfjkdsa f ddjfhsd sdf sdkjfhdskjfsfsd f"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/text_size12" />
+
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+    <TextView
+        android:layout_marginBottom="@dimen/margin_10"
+        android:gravity="right"
+        android:layout_marginTop="@dimen/margin_2"
+        android:layout_below="@id/comment_box_layout"
+        android:text="20 - jan -2017"
+        android:layout_marginRight="@dimen/margin_5"
+        android:textColor="@color/gray_color"
+        android:textSize="@dimen/text_size12"
+        android:id="@+id/comment_date_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:background="@color/gray_color"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></LinearLayout>
+
+
+</LinearLayout>

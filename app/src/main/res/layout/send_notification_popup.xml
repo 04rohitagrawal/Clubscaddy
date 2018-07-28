@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_header"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Send Notification/E-mail"
+        android:textColor="@color/white_color" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_blue"
+        android:lines="3"
+        android:minLines="3"
+        android:padding="10dp"
+        android:textColor="@color/white_color"
+        android:id="@+id/notificationET"
+         />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_color"
+        android:orientation="horizontal"
+        android:padding="1dp" 
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:id="@+id/notification"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Notificaion"
+            android:textColor="@color/white_color" 
+            android:background="@color/booked_slot_color"
+            />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Email"
+            android:textColor="@color/white_color"
+           android:background="@color/free_slot_color"
+             />
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Cancel"
+            android:textColor="@color/white_color" 
+            android:background="@color/blue_header"
+            />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/actionBar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:contentInsetEnd="0dp"
+    app:contentInsetStart="0dp" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_color"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/actionbar_backbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:background="@null"
+            android:src="@drawable/back"
+            android:contentDescription="@string/app_name"
+            android:padding="10dp" />
+
+        <TextView
+            android:maxLength="20"
+            android:id="@+id/actionbar_titletext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black_color" />
+
+        <ImageButton
+            android:background="@android:color/transparent"
+            android:textColor="@color/RoundedRectangle"
+            android:id="@+id/actionbar_logoutbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/margin_5"
+            android:src="@drawable/exit_btn"
+
+            android:contentDescription="@string/app_name"
+
+            android:scaleType="fitCenter" />
+        <TextView
+            android:visibility="gone"
+            android:padding="@dimen/delete_btn_padding"
+            android:textColor="@color/RoundedRectangle"
+            android:id="@+id/delete_all_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/margin_5"
+            android:text="Delete All"
+            android:textSize="@dimen/text_size14"
+            android:background="@drawable/delete_all_layout"
+
+            />
+        <ImageButton
+            android:id="@+id/upload_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_5"
+            android:background="@null"
+            android:src="@drawable/upload"
+            android:contentDescription="@string/app_name"
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_toLeftOf="@id/upload_news"
+            android:id="@+id/ad_icon_iv"
+            android:background="@drawable/ad_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.Toolbar>
+

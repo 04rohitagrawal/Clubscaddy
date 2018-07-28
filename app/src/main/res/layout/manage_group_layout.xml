@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/tab_layout"
+        android:visibility="visible"
+
+
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        >
+        <LinearLayout
+            android:padding="@dimen/margin_15"
+
+            android:background="@drawable/active_tb_bg"
+            android:id="@+id/group_tab"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+
+                android:textSize="@dimen/text_size14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/white_color"
+                android:text="Groups"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:padding="@dimen/margin_15"
+
+            android:background="@color/unselected_tab"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/scheduling_tab"
+            >
+            <TextView
+
+                android:textSize="@dimen/text_size14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/white_color"
+                android:text="Schedules"
+                />
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/group_list_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/add_group_btn"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/add_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+
+        <ListView
+
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_above="@id/add_group_btn"
+            android:dividerHeight="@dimen/margin_1"
+            android:divider="@color/divider_line_color"
+            android:id="@+id/group_list_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></ListView>
+
+
+
+    </RelativeLayout>
+
+
+        <ImageButton
+            android:visibility="invisible"
+            android:id="@+id/add_scheduling_btn"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/add_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.RecyclerView
+        android:visibility="gone"
+        android:layout_above="@id/add_scheduling_btn"
+        android:id="@+id/scheduling_recyle_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+
+

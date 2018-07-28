@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_5" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_color"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_5" >
+
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/news_creater_iv"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/default_img_profile"
+                        android:layout_width="@dimen/member_profile_size"
+                        android:layout_height="@dimen/member_profile_size" />
+
+
+
+
+                    <ProgressBar
+                        android:visibility="gone"
+                        android:id="@+id/user_image_loader_progressbar"
+                        android:layout_width="@dimen/cross_image_sze"
+                        android:layout_height="@dimen/cross_image_sze"
+                        android:layout_centerInParent="true" />
+
+
+                </RelativeLayout>
+
+
+
+                <TextView
+                    android:id="@+id/news_creater_name_tv"
+                    android:text="Rohit Agrawal"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:singleLine="true"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/text_size16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_5"
+                android:text=""
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/text_size14"
+                android:textStyle="bold" />
+
+
+
+            <TextView
+
+                android:id="@+id/news_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_5"
+                android:text=""
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/text_size12" />
+
+
+            <TextView
+                android:layout_marginBottom="@dimen/margin_5"
+                android:id="@+id/url"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/padding_5"
+                android:paddingRight="@dimen/padding_5"
+                android:text=""
+                android:textColor="@color/firozi"
+                android:textSize="@dimen/text_size12" />
+
+            <GridView
+
+                android:id="@+id/new_image_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="1" >
+            </GridView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_5" >
+
+                <TextView
+                    android:id="@+id/like_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/like"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_10"
+                    android:text="0"
+                    android:textColor="@color/comment_all_text_color" />
+
+                <TextView
+                    android:id="@+id/comment_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/comment"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_10"
+                    android:text="0"
+                    android:textColor="@color/comment_all_text_color" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_marginRight="@dimen/margin_5"
+                android:background="@color/divider_line_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_5"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/like_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/like_icon"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_10"
+                    android:text="Like"
+                    android:textColor="@color/comment_all_text_color" />
+
+                <TextView
+                    android:id="@+id/comment_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/comment_icon"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_10"
+                    android:text="Comment"
+                    android:textColor="@color/comment_all_text_color" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_marginRight="@dimen/margin_5"
+                android:background="@color/divider_line_color" />
+
+            <RelativeLayout
+                android:id="@+id/single_comment_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_5" >
+
+
+                <RelativeLayout
+                    android:id="@+id/image_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:background="@drawable/default_img_profile"
+                        android:id="@+id/commentor_image"
+                        android:layout_width="@dimen/member_profile_size"
+                        android:layout_height="@dimen/member_profile_size"
+                        android:layout_margin="@dimen/margin_5"
+
+                        android:scaleType="fitXY" />
+
+                    <ProgressBar
+                        android:visibility="gone"
+                        android:id="@+id/commenter_image_loader_progressbar"
+                        android:layout_width="@dimen/cross_image_sze"
+                        android:layout_height="@dimen/cross_image_sze"
+                        android:layout_centerInParent="true" />
+                </RelativeLayout>
+
+
+
+                <ImageView
+                    android:id="@+id/delete_member"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/cancel_icon" />
+
+                <LinearLayout
+                    android:layout_centerVertical="true"
+                    android:id="@+id/member_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_5"
+                    android:layout_toLeftOf="@id/delete_member"
+                    android:layout_toRightOf="@id/image_layout"
+                    android:orientation="vertical" >
+
+                    <TextView
+
+                        android:id="@+id/commentor_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Kratika Sharma"
+                        android:singleLine="true"
+                        android:textColor="#787878"
+                        android:textSize="@dimen/text_size12" />
+
+                    <TextView
+                        android:id="@+id/comment_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:gravity="center"
+                        android:text="My Comments"
+                        android:autoLink="web"
+                        android:linksClickable="true"
+                        android:textColor="@color/comment_all_text_color"
+                        android:textSize="@dimen/text_size12" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/last_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_marginRight="@dimen/margin_5"
+                android:layout_marginTop="@dimen/margin_15"
+                android:background="@color/divider_line_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_5" >
+
+                <EditText
+                 android:singleLine="true"
+                    android:inputType="text"
+                    android:imeOptions="actionSend"
+                    android:id="@+id/comment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="Write a comment..."
+                    android:padding="@dimen/padding_10"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/text_size10" />
+
+                <ImageView
+                    android:id="@+id/send_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_10"
+                    android:src="@drawable/send" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@null" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/edit_news_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_marginRight="@dimen/margin_5"
+                android:background="@drawable/black_edit_pencil" />
+
+            <ImageButton
+                android:id="@+id/delete_news_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_marginRight="@dimen/margin_5"
+                android:background="@drawable/delete_btn" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/file_downloading_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:indeterminate="false"
+            android:max="100"
+            android:progressDrawable="@drawable/style_circular_fill"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</LinearLayout>

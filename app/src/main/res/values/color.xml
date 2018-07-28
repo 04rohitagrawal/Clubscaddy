@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#00000000</color>
+    <color name="semi_transparent">#330000</color>
+
+
+    <color name="white_color">#FFFFFF</color>
+    <color name="black_color">#000000</color>
+    <color name="gray_color">#c0c0c0</color>
+    <color name="light_color">#dddddd</color>
+    <color name="light_gray_color">#E0E0E0</color>
+    <color name="light_yellow">#1f9ab9</color>
+    <color name="light_more_gray">#f2f2f2</color>
+    <color name="aqua">#F0FFFF</color>
+    <color name="green">#006400</color>
+    <color name="red">#FF0000</color>
+    <color name="login_text_color">#3c3c3c</color>
+    <color name="white_edit_text_color">#1a1a1a</color>
+    <color name="reserver">#43aaa4</color>
+    <color name="notification">#d2a723</color>
+    <color name="drop_ins">#76aa43</color>
+    <color name="event_text">#ba653f</color>
+    <color name="lessions">#536CB5</color>
+    <color name="news_text">#7d43aa</color>
+    <color name="score_text">#ad4e9c</color>
+    <color name="member_directory">#be3340</color>
+    <color name="setting">#313131</color>
+    
+    <color name="broadcast_text_color">#156489</color>
+    <color name="polling_text_color">#f4b407</color>
+    <color name="profile_text_color">#2CE4D5</color>
+    <color name="statistics_text_color">#FF790C</color>
+    
+    
+    <color name="all_box">#efefef</color>
+    <color name="text_color">#313131</color>
+    <color name="RoundedRectangle">#536cb5</color>
+    <color name="firozi">#44d9f4</color>
+    <color name="blue_header">#435daa</color>
+    <color name="blue_color">#0000ff</color>
+    <color name="time_tab_color">#ededed</color>
+    <color name="green_bg_color">#a1d190</color>
+    <color name="booked_bg_color">#435daa</color>
+    <color name="grey_bg_color">#e0e0e0</color>
+    <color name="free_slot_color">#70bb68</color>
+    <color name="booked_slot_color">#d72e2e</color>
+    <color name="my_booked_slot_color">#435daa</color>
+    <color name="green_selection_color">#247e1b</color>
+     <color name="selected_green_color">#004459</color>
+    
+    <color name="bulk_booked_slot_color">#FFFF66</color>
+    <color name="recursive_booked_slot_color">#FFCC66</color>
+    <color name="comment_all_text_color">#a4a4a4</color>
+    <color name="write_comment_text_color">#d1d1d1</color>
+    <color name="divider_line_color">#d7d7d7</color>
+    <color name="join_member_color">#fab600</color>
+
+    <color name="hint_color">#c0c0c0</color>
+
+
+
+    <color name="progress_gray">#FFD8D8D8</color>
+    <color name="progress_gray_dark">#FF383838</color>
+    <color name="default_blue_light">#ff33b5e5</color>
+    <color name="dark_gray">#262d32</color>
+
+    <color name="selected_tab">#384c9a</color>
+    <color name="unselected_tab">#455dbb</color>
+
+    <color name="t_unselected_tab">#80455dbb</color>
+
+    <color name="leaguew_notification">#43aaa4</color>
+
+
+
+
+</resources>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#536B97"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/dialog_header_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_color"
+        android:gravity="center"
+        android:padding="@dimen/padding_10"
+        android:text="Add Match"
+        android:textColor="@color/black_color"
+        android:textSize="@dimen/text_size18" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:layout_marginLeft="@dimen/margin_15"
+        android:layout_marginRight="@dimen/margin_15"
+        android:layout_marginTop="@dimen/padding_10"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.4"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_5"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:text="Date"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/text_size16" />
+
+            <EditText
+                android:id="@+id/date_edit_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_background"
+                android:clickable="false"
+                android:drawableLeft="@drawable/calendar"
+                android:focusable="false"
+                android:imeOptions="actionNext"
+
+                android:inputType="text"
+                android:padding="@dimen/padding_5"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColor="@color/black_color"
+                android:textColorHint="@color/gray_color"
+                android:textSize="@dimen/text_size14" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.4"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_5"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:text="Time"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/text_size16" />
+
+
+            <EditText
+                android:id="@+id/time_edit_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.3"
+                android:background="@drawable/edittext_background"
+                android:clickable="false"
+                android:drawableLeft="@drawable/clock"
+                android:focusable="false"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+
+                android:padding="@dimen/padding_5"
+                android:paddingLeft="@dimen/padding_10"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColor="@color/black_color"
+                android:textColorHint="@color/gray_color"
+                android:textSize="@dimen/text_size14" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_5"
+        android:layout_marginLeft="@dimen/margin_30"
+
+        android:layout_marginRight="@dimen/margin_15"
+        android:layout_marginTop="@dimen/margin_10"
+        android:text="Add Location"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/text_size16" />
+
+
+    <EditText
+
+        android:id="@+id/location_edit_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_15"
+        android:layout_marginRight="@dimen/margin_15"
+        android:background="@drawable/edittext_background"
+        android:imeOptions="actionNext"
+
+        android:inputType="text"
+        android:padding="@dimen/padding_10"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:textColor="@color/black_color"
+        android:textColorHint="@color/gray_color"
+        android:textSize="@dimen/text_size14" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_5"
+        android:layout_marginLeft="@dimen/margin_30"
+
+        android:layout_marginRight="@dimen/margin_15"
+        android:layout_marginTop="@dimen/margin_10"
+        android:text="Opponent Name"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/text_size16" />
+
+
+    <EditText
+
+        android:id="@+id/opponent_name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_15"
+        android:layout_marginRight="@dimen/margin_15"
+        android:background="@drawable/edittext_background"
+        android:hint="Enter opponent name"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:padding="@dimen/padding_10"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:textColor="@color/black_color"
+        android:textColorHint="@color/gray_color"
+        android:textSize="@dimen/text_size14" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_30"
+        >
+
+
+        <TextView
+            android:id="@+id/cancel_btn_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#4155A7"
+            android:gravity="center"
+            android:padding="@dimen/padding_10"
+            android:text="Cancel"
+            android:layout_marginRight="@dimen/margin_2"
+
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size18" />
+
+
+
+
+
+        <TextView
+
+            android:id="@+id/done_btn_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#4155A7"
+            android:gravity="center"
+            android:padding="@dimen/padding_10"
+            android:text="Done"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size18" />
+
+
+
+
+
+        <TextView
+            android:layout_marginLeft="@dimen/margin_2"
+
+            android:id="@+id/delete_btn_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#4155A7"
+            android:gravity="center"
+            android:padding="@dimen/padding_10"
+            android:text="Delete"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size18" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

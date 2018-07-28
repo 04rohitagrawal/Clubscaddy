@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+
+    android:background="@color/white_color"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/court_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/blue_header"
+        android:clickable="false"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/padding_10"
+        android:text="Reservation Details"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/text_size16" />
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_10"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+
+
+         <!--<LinearLayout
+             android:orientation="horizontal"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">-->
+
+
+             <TextView
+                 android:layout_gravity="left"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="@dimen/margin_5"
+                 android:layout_marginRight="@dimen/margin_5"
+                 android:minEms="6"
+                 android:text="Reservation For  "
+                 android:textColor="@color/black_color" />
+
+
+             <com.clubscaddy.custumview.InstantAutoComplete
+                 android:id="@+id/member_auto_completetv"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentLeft="true"
+                 android:background="@drawable/whitecolor_background"
+                 android:completionThreshold="1"
+                 android:hint="Select member"
+                 android:padding="@dimen/padding_8"
+                 android:layout_marginTop="@dimen/margin_2"
+                 android:singleLine="true"
+                 android:textColor="@color/black_color"
+                 android:textColorHint="@color/gray_color"
+                 android:textSize="@dimen/text_size16">
+
+
+             </com.clubscaddy.custumview.InstantAutoComplete>
+
+
+
+<!--
+         </LinearLayout>
+-->
+
+
+
+
+
+
+
+
+
+
+
+        <TextView
+        android:layout_marginBottom="@dimen/margin_2"
+        android:layout_marginTop="@dimen/margin_5"
+        android:layout_marginRight="@dimen/margin_5"
+        android:layout_marginLeft="@dimen/margin_2"
+        android:textSize="@dimen/text_size14"
+        android:text="Note: Leave the above field empty if you are reserving for yourself"
+        android:textColor="@color/gray_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+
+    <TextView
+
+
+        android:visibility="gone"
+        android:id="@+id/error_msg_tv"
+        android:textSize="@dimen/text_size16"
+        android:textColor="@color/red"
+        android:text="This member does not exits , please choose a name from the list."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+
+     <!--   <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">-->
+
+            <TextView
+                android:layout_gravity="center_vertical"
+
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_marginRight="@dimen/margin_5"
+                android:gravity="center_vertical"
+                android:text="Reservation Name  "
+                android:textColor="@color/black_color" />
+
+
+            <EditText
+                android:id="@+id/booking_reason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/whitecolor_background"
+                android:hint="Enter reservation name"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_marginBottom="@dimen/margin_5"
+                android:padding="@dimen/padding_8"
+                android:singleLine="true"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/text_size16" />
+
+<!--
+            </LinearLayout>
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <TextView
+            android:layout_marginRight="@dimen/margin_5"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:textSize="@dimen/text_size14"
+            android:text="Note: Leave the above field empty if you are reserving for another member"
+            android:textColor="@color/gray_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+
+
+        <TextView
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_8"
+            android:layout_marginRight="@dimen/padding_8"
+
+            android:text="Select Category  "
+            android:textColor="@color/black_color" />
+
+
+
+
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/margin_2"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/whitecolor_background"
+
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <Spinner
+                android:overlapAnchor="false"
+
+
+                android:id="@+id/slecet_catogory_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:background="@android:color/transparent"
+
+
+                />
+            <ImageButton
+                android:layout_centerVertical="true"
+                android:id="@+id/open_category_spinner_btn"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/margin_5"
+                android:background="@drawable/down_arrow"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginRight="@dimen/margin_10"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:minEms="6"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="Reservation Duration  "
+            android:textColor="@color/black_color" />
+
+
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:padding="@dimen/padding_8"
+            android:background="@drawable/whitecolor_background"
+
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <Spinner
+
+                android:id="@+id/spinner"
+                android:overlapAnchor="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:background="@android:color/transparent"
+
+                />
+            <ImageButton
+                android:layout_centerVertical="true"
+                android:id="@+id/open_spinner_btn"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/margin_5"
+                android:background="@drawable/down_arrow"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                />
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_color"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/margin_5"
+        android:paddingBottom="@dimen/margin_5"
+        android:paddingLeft="@dimen/margin_10"
+        android:paddingRight="@dimen/margin_10">
+
+        <LinearLayout
+            android:id="@+id/sun"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/sun_tick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:src="@drawable/small_tick"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/sun_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:clickable="false"
+                android:text="@string/sunday"
+                android:textColor="@color/blue_header"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/mon_tick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:src="@drawable/small_tick"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/mon_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:clickable="false"
+                android:text="@string/monday"
+                android:textColor="@color/blue_header"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/tue_tick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:src="@drawable/small_tick"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tue_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:clickable="false"
+                android:text="@string/tuesday"
+                android:textColor="@color/blue_header"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/wed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/wed_tick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:src="@drawable/small_tick"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/wed_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:clickable="false"
+                android:text="@string/wednesday"
+                android:textColor="@color/blue_header"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/thu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/thu_tick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:src="@drawable/small_tick"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/thu_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:clickable="false"
+                android:text="@string/thursday"
+                android:textColor="@color/blue_header"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fri"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/fri_tick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:src="@drawable/small_tick"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/fri_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:clickable="false"
+                android:text="@string/friday"
+                android:textColor="@color/blue_header"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/sat_tick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:src="@drawable/small_tick"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/sat_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:clickable="false"
+                android:text="@string/satuarday"
+                android:textColor="@color/blue_header"
+                android:textSize="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/blue_header"
+            android:gravity="center"
+            android:padding="@dimen/padding_10"
+            android:text="@string/cancel"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size16" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@color/white_color" />
+
+        <TextView
+            android:id="@+id/ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/blue_header"
+            android:gravity="center"
+            android:padding="@dimen/padding_10"
+            android:text="@string/done"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size16" />
+    </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

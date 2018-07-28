@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white_color"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:padding="@dimen/padding_5"
+        android:id="@+id/topPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/user_image_view"
+        android:background="@drawable/default_img_profile"
+        android:layout_width="@dimen/user_profile_size"
+        android:layout_height="@dimen/user_profile_size" />
+
+
+     <ImageView
+
+         android:id="@+id/cancel_btn"
+         android:layout_centerVertical="true"
+         android:layout_alignParentRight="true"
+         android:background="@drawable/cancel_icon"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+
+
+     <TextView
+         android:layout_toLeftOf="@id/cancel_btn"
+         android:singleLine="true"
+         android:layout_marginLeft="@dimen/margin_10"
+         android:layout_toRightOf="@id/user_image_view"
+         android:layout_centerVertical="true"
+         android:text="Abcd Abcd"
+         android:id="@+id/user_name_tv"
+         android:textColor="@color/black_color"
+         android:textSize="@dimen/text_size18"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_below="@id/topPanel"
+        android:background="@color/gray_color"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></LinearLayout>
+
+
+</RelativeLayout>
